@@ -10,7 +10,31 @@ html
 {
     height: 100%;
     background-color: #17181a; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #19181a, #763ead, #34228a);
+    background-image: linear-gradient(to bottom right, #1e1824, #402e52, #170a38);
+}
+
+.column.is-narrow 
+{
+    float: right;
+}
+
+.box 
+{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 90%;
+}
+
+.info
+{
+    /* border: 1px solid red; */
+    margin-right: 30px;
+    width: auto;
+}
+
+.photo
+{
+    box-shadow: 5px 10px 20px #000000;
 }
 
 body 
@@ -19,8 +43,13 @@ body
     margin-top: 150px;
     margin-left: 200px;
     height: auto;
-    width: 50%;
     color: #faf9f7;
+}
+
+img
+{
+    border: 1px solid white;
+    object-fit: cover;
 }
 
 h1
@@ -37,6 +66,8 @@ p
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+
+    width: auto;
 
     word-wrap: break-word;
 
