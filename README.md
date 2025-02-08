@@ -1,2 +1,2 @@
 # website </br>
-My personal website!
+Exploring web dev with a personal site!
