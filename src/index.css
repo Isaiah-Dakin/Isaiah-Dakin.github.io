@@ -10,7 +10,7 @@ html
 {
     height: 100%;
     background-color: #17181a; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #1e1824, #402e52, #170a38);
+    background-image: linear-gradient(to bottom right, #0f1711, #243028, #89adc7);
 }
 
 .column.is-narrow 
@@ -28,13 +28,16 @@ html
 .info
 {
     /* border: 1px solid red; */
-    margin-right: 30px;
+    margin-right: 200px;
     width: auto;
 }
 
 .photo
 {
-    box-shadow: 5px 10px 20px #000000;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    box-shadow: 5px 10px 10px #000000;
 }
 
 body 
@@ -49,13 +52,15 @@ body
 img
 {
     border: 1px solid white;
+    width: 100%;
     object-fit: cover;
 }
 
 h1
 {
     /* border: 1px solid red; */
-    font-size: 54px;
+    font-family : "Times New Roman", Times, serif;
+    font-size: 68px;
 }
 
 p
@@ -63,14 +68,64 @@ p
     /* border: 1px solid red; */
     border-bottom: 1px solid white;
 
-    padding-top: 20px;
+    padding-top: 50px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 
     width: auto;
 
     word-wrap: break-word;
 
-    font-family: 'Courier New';
-    font-size: 26px;
+    font-family: 'monaco', 'Courier New', monospace;
+    font-size: 28px;
+}
+
+.buttons
+{
+    padding-top: 25px;
+    position: relative;
+    border-style: none;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: fit-content;
+    height: fit-content;
+    gap: 10px;
+}
+
+.mail, .linkedin, .git
+{
+    /* background-color: rgba(255, 255, 255, 0.04); */
+    border-radius: 8px;
+
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.mail-icon, .linkedin-icon, .git-icon
+{
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    color: transparent;
+    object-fit: cover;
+    width: 50px;
+}
+
+.mail-icon
+{
+    padding-top: 5px;
+}
+
+.mail-button, .linkedin-button, .git-button
+{
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    color: transparent;
+    width: 50px;
+    height: 50px;
 }
