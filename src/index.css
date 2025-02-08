@@ -52,12 +52,12 @@ a:link
 
 a:visited
 {
-    color: #eda01a;
+    color: #471247;
 }
 
 a:active
 {
-    color: #61c4cf;
+    color: white;
 }
 
 a:hover
@@ -70,8 +70,8 @@ a:hover
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 25px;
-    margin-left: 71%; 
+    gap: 35px;
+    margin-left: 70%; 
     margin-top: 1%;
     word-wrap: break-word;
     font-family: 'monaco', 'Courier New', monospace;
