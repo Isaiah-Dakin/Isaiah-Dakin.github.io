@@ -7,32 +7,22 @@
     font-family : monospace;
 }
 
-html
-{
-    height: 100%;
-    background-color: #17181a; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #0f1711, #243028, #477863);
-}
-
 body 
 {
-    /* border: 1px solid red; */
     margin-top: 150px;
-    margin-left: 200px;
     height: auto;
     color: #faf9f7;
 }
 
 img
 {
-    border: 2px solid rgba(255, 255, 255, 0.55);
+    border: 2px solid white;
     width: 100%;
     object-fit: cover;
 }
 
 h1
 {
-    /* border: 1px solid red; */
     font-family : "Times New Roman", Times, serif;
     font-size: 68px;
 }
@@ -40,19 +30,23 @@ h1
 p
 {
     word-wrap: break-word;
-
     font-family: 'Courier New', monospace;
     font-size: 30px;
 }
 
+a
+{
+    font-weight: 600;
+}
+
 a:link
 {
-    color: #44b977;
+    color: #ed2f62;
 }
 
 a:visited
 {
-    color: #3fab6e;
+    color: #ed2f62;
 }
 
 a:active
@@ -65,9 +59,9 @@ a:hover
     color: white;
 }
 
-.wave
+.container
 {
-    display: flex;
+    margin-left: 200px;
 }
 
 .header-links
@@ -81,7 +75,6 @@ a:hover
     padding-top: 1%;
     word-wrap: break-word;
 
-    font-family: 'monaco', 'Courier New', monospace;
     font-size: 28px;
 }
 
@@ -91,15 +84,15 @@ a:hover
     margin-top: -150px;
     margin-left: -200px;   
     margin-bottom: 6%;
-    padding-left: 7%;
-    padding-top: 1%;
+    padding-left: 8%;
     padding-bottom: 1%;
 
     display: flex;
     flex-direction: row;
     height: auto;
 
-    border-style: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .column.is-narrow 
@@ -107,16 +100,14 @@ a:hover
     float: right;
 }
 
-.box 
+.info-box 
 {
-    /* border: 1px solid red; */
     display: flex;
     width: 90%;
 }
 
 .info
 {
-    /* border: 1px solid red; */
     margin-right: 100px;
     width: auto;
 }
@@ -126,12 +117,11 @@ a:hover
     display: flex;
     justify-content: center;
     width: 60%;
-    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.5);
 }
 
 .info-p
 {
-    /* border: 1px solid red; */
     border-bottom: 1px solid white;
 
     padding-top: 50px;
