@@ -4,14 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family : 'monaco', monospace;
+    font-family : monospace;
 }
 
 html
 {
     height: 100%;
     background-color: #17181a; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #0f1711, #243028, #89adc7);
+    background-image: linear-gradient(to bottom right, #0f1711, #243028, #477863);
 }
 
 body 
@@ -25,7 +25,7 @@ body
 
 img
 {
-    border: 2px solid black;
+    border: 2px solid rgba(255, 255, 255, 0.55);
     width: 100%;
     object-fit: cover;
 }
@@ -41,18 +41,18 @@ p
 {
     word-wrap: break-word;
 
-    font-family: 'monaco', 'Courier New', monospace;
-    font-size: 28px;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
 }
 
 a:link
 {
-    color: #ac38c9;
+    color: #44b977;
 }
 
 a:visited
 {
-    color: #471247;
+    color: #3fab6e;
 }
 
 a:active
@@ -65,15 +65,22 @@ a:hover
     color: white;
 }
 
+.wave
+{
+    display: flex;
+}
+
 .header-links
 {
-    position: relative;
     display: flex;
     flex-direction: row;
     gap: 35px;
-    margin-left: 70%; 
-    margin-top: 1%;
+
+    position: absolute;
+    margin-left: 65%; 
+    padding-top: 1%;
     word-wrap: break-word;
+
     font-family: 'monaco', 'Courier New', monospace;
     font-size: 28px;
 }
@@ -81,14 +88,17 @@ a:hover
 .header
 {
     position: relative;
-    display: flex;
-    flex-direction: row;
     margin-top: -150px;
     margin-left: -200px;   
-    margin-bottom: 7%;
+    margin-bottom: 6%;
     padding-left: 7%;
-    padding-top: 2%;
-    height: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    display: flex;
+    flex-direction: row;
+    height: auto;
+
     border-style: none;
 }
 
@@ -116,7 +126,7 @@ a:hover
     display: flex;
     justify-content: center;
     width: 60%;
-    box-shadow: 5px 10px 10px #000000;
+    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.5);
 }
 
 .info-p
@@ -146,7 +156,7 @@ a:hover
     gap: 20px;
 }
 
-.mail, .linkedin, .git
+.mail, .linkedin, .git, .instagram
 {
     /* background-color: rgba(255, 255, 255, 0.04); */
     border-radius: 8px;
@@ -156,7 +166,7 @@ a:hover
     height: 50px;
 }
 
-.mail-icon, .linkedin-icon, .git-icon
+.mail-icon, .linkedin-icon, .git-icon, .instagram-icon
 {
     position: absolute;
     background-color: transparent;
@@ -171,7 +181,7 @@ a:hover
     padding-top: 5px;
 }
 
-.mail-button, .linkedin-button, .git-button
+.mail-button, .linkedin-button, .git-button, .instagram-button
 {
     position: absolute;
     background-color: transparent;
