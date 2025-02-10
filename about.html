@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Isaiah Dakin - About</title>
-    <link rel="stylesheet" href="src/about.css">
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Isaiah Dakin - About</title>
+        <link rel="stylesheet" href="src/about.css">
+        <style>
+            body, html {
+                height: 100%;
+                font-family: 'Courier New', monospace;
+            }
+
+            .background
+            {
+                position:absolute;
+                height: 100%;
+                width: 100%;
+                background-image: url('../src/images/bg.jpg');
+                background-position: center;
+                background-size: cover; 
+                image-rendering: crisp-edges;
+                filter: blur(10px);
+                z-index: -1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="background"></div>
+
+        <div class="container">
+            <div class="header">
+                <div class="home">
+                    <img src="src/images/icon-home.png" alt="Visit my home page." class="home-icon">
+                    <button title="Home" onclick="window.location.href='https://isaiahdakin.ca/';" class="home-button"></button>
+                </div>
+                <div class="header-links">
+                  <a href="/about.html">About</a>
+                  <a href="/contact.html">Contact</a>
+                  <a href="/projects.html">Projects</a>
+                </div>
+              </div>
+
+              <div class="info-box">
+                <div class="info">
+                  <h1>Who am I?</h1>
+                  <p class="info-p">
+                    My name is Isaiah Dakin. <span style="font-weight: 600;">I'm a 22 year old student at the University of New Brunswick</span>. I am in the 5th year
+                    of my studies on computer science, & will graduate next spring with a <span style="font-weight: 600;">bachelor of computer science degree</span>.
+                    <br><br>
+                    <span style="font-weight: 600;">One of my biggest passions is programing</span>, however, I enjoy other activities too! <span style="font-weight: 600;">Hiking & bushcrafting</span>
+                    ,<span style="font-weight: 600;">music</span>, <span style="font-weight: 600;">scary movies</span>, <span style="font-weight: 600;">video games</span>, & the <span style="font-weight: 600;">gym</span> 
+                    to name a few. Though I tend to be nervous at first, I'm a sociable person & am easy to get along with. <span style="font-weight: 600;">I can't wait to meet you! :)</span>
+                    <br><br>
+                    Through personal projects & my studies, I have aquired skills in a few areas of programming. Here's a few I feel
+                    are notable: <span style="color:#ed2f62">Git</span>, <span style="color:#ed2f62">Linux CLI</span>, <span style="color:#ed2f62">C#</span>,
+                    <span style="color:#ed2f62">C</span>, <span style="color:#ed2f62">Java</span>, <span style="color:#ed2f62">JavaScript</span>, 
+                    & <span style="color:#ed2f62">HTML/CSS</span>. In addition to this, through my journey I have gained an adequate amount of experience with
+                    co-oprative project management & communication.
+                  </p>
+                </div>
+              </div>
+        </div>
+    </body>
 </html>

@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Isaiah Dakin - Contact</title>
-    <link rel="stylesheet" href="src/contact.css">
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Isaiah Dakin - Contact</title>
+        <link rel="stylesheet" href="src/contact.css">
+        <style>
+            body, html {
+                height: 100%;
+                font-family: 'Courier New', monospace;
+            }
+
+            .background
+            {
+                position:absolute;
+                height: 100%;
+                width: 100%;
+                background-image: url('../src/images/bg.jpg');
+                background-position: center;
+                background-size: cover; 
+                image-rendering: crisp-edges;
+                filter: blur(10px);
+                z-index: -1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="background"></div>
+
+        <div class="container">
+            <div class="header">
+                <div class="home">
+                    <img src="src/images/icon-home.png" alt="Visit my home page." class="home-icon">
+                    <button title="Home" onclick="window.location.href='https://isaiahdakin.ca/';" class="home-button"></button>
+                </div>
+                <div class="header-links">
+                  <a href="/about.html">About</a>
+                  <a href="/contact.html">Contact</a>
+                  <a href="/projects.html">Projects</a>
+                </div>
+              </div>
+
+              <div class="info-box">
+                <div class="info">
+                  <h1>My Contact Information:</h1>
+                  <p class="info-p">
+                    <span style="font-weight: 600;">Mobile</span>: <span style="color:#ed2f62">(506)470-1032</span>
+                    <br><br>
+                    <span style="font-weight: 600;">Email</span>: <span style="color:#ed2f62">IsaiahDak16@gmail.com</span>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </body>
 </html>
