@@ -23,7 +23,7 @@ img
 
 h1
 {
-    font-family : "Times New Roman", Times, serif;
+    font-family: 'Lucida Console', monospace;
     font-size: 68px;
 }
 
@@ -39,14 +39,19 @@ a
     font-weight: 600;
 }
 
+span
+{
+    font-weight: 600;
+}
+
 a:link
 {
-    color: #ed2f62;
+    color: #4c06bd;
 }
 
 a:visited
 {
-    color: #ed2f62;
+    color: #4c06bd;
 }
 
 a:active
