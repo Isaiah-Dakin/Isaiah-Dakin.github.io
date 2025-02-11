@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Isaiah Dakin - Contact</title>
+        <link rel="stylesheet" href="src/contact.css">
+        <style>
+          body, html {
+              height: 100%;
+              font-family: 'Courier New', monospace;
+          }
+
+          html
+          {
+            background-color: #07030d;
+          }
+
+          .background
+          {
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            background-image: url('../src/images/bg.jpg');
+            background-position: center;
+            background-size: cover; 
+            image-rendering: crisp-edges;
+            filter: blur(15px);
+            z-index: -1;
+          }
+        </style>
+    </head>
+
+    <body>
+        <div class="background"></div>
+
+        <div class="container">
+            <div class="header">
+                <div class="home">
+                    <img src="src/images/icon-home.png" alt="Visit my home page." class="home-icon">
+                    <button title="Home" onclick="window.location.href='https://isaiahdakin.ca/';" class="home-button"></button>
+                </div>
+                <div class="header-links">
+                  <a href="/about.html">About</a>
+                  <a href="/contact.html">Contact</a>
+                  <a href="/projects.html">Projects</a>
+                </div>
+              </div>
+        </div>
+    </body>
+</html>
