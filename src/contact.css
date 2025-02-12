@@ -14,7 +14,8 @@ button:hover
 
 .info-box 
 {
-    translate: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 
     display: flex;
     width: fit-content;

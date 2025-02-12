@@ -9,7 +9,8 @@
 
 .grid 
 {
-    translate: 90%;
+    margin-left: 31%;
+    margin-right: 31%;
     padding: 2%;
 
     width: fit-content;
