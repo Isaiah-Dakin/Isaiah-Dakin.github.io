@@ -66,6 +66,12 @@ a:active, a:hover
     color: white;
 }
 
+.container
+{
+    width: fit-content;
+    height: fit-content;
+}
+
 .header-links
 {
     position: absolute;
@@ -105,7 +111,6 @@ a:active, a:hover
     position: relative;
     padding-right: 2.5%;
     translate: 40%;
-    margin-top: -5%;
    
     display: flex;
     flex-direction: row;
@@ -115,14 +120,14 @@ a:active, a:hover
     height: fit-content;
 }
 
-.mail, .linkedin, .git, .instagram, .home
+.mail, .linkedin, .git, .instagram, .home, .spotify
 {
     position: relative;
     width: 50px;
     height: 50px;
 }
 
-.mail-icon, .linkedin-icon, .git-icon, .instagram-icon, .home-icon
+.mail-icon, .linkedin-icon, .git-icon, .instagram-icon, .home-icon, .spotify-icon
 {
     position: absolute;
 
@@ -134,7 +139,7 @@ a:active, a:hover
     color: transparent;
 }
 
-.mail-button, .linkedin-button, .git-button, .instagram-button, .home-button
+.mail-button, .linkedin-button, .git-button, .instagram-button, .home-button, .spotify-button
 {
     position: absolute;
     background-color: transparent;
@@ -144,14 +149,9 @@ a:active, a:hover
     height: 50px;
 }
 
-.mail-button:hover, .linkedin-button:hover, .git-button:hover, .instagram-button:hover, .home-button:hover
+.mail-button:hover, .linkedin-button:hover, .git-button:hover, .instagram-button:hover, .home-button:hover, .spotify-button:hover
 {
     cursor: pointer;
-}
-
-.mail-icon
-{
-    padding-top: 100%;
 }
 
 .home
