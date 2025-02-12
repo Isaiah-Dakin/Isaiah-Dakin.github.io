@@ -6,31 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Isaiah Dakin - Home</title>
+    <link rel="stylesheet" href="src/general.css">
     <link rel="stylesheet" href="src/index.css">
-    <style>
-        body, html {
-            height: 100%;
-            font-family: 'Courier New', monospace;
-        }
-
-        html
-        {
-          background-color: #07030d;
-        }
-
-        .background
-        {
-          position:absolute;
-          height: 100%;
-          width: 100%;
-          background-image: url('../src/images/bg.jpg');
-          background-position: center;
-          background-size: cover; 
-          image-rendering: crisp-edges;
-          filter: blur(15px);
-          z-index: -1;
-        }
-    </style>
   </head>
 
   <body>
@@ -38,7 +15,10 @@
       
     <div class="container">
       <div class="header">
-        <span title="Welcome!" style='font-size:45px; display: flex;' class="wave">&#128075;</span>
+        <div class="home">
+          <img src="src/images/icon-home.png" alt="Visit my home page." class="home-icon">
+          <button title="Home" onclick="window.location.href='https://isaiahdakin.ca/';" class="home-button"></button>
+        </div>
         <div class="header-links">
           <a href="/about.html">About</a>
           <a href="/contact.html">Contact</a>
@@ -50,7 +30,7 @@
         <div class="info">
           <h1>Hi, I'm Isaiah.<br>I'm a Student & Programmer.</h1>
           <p class="info-p">
-            As a student, I don't boast a heafty list of professional experience.
+            As a student, I don't boast a hefty list of professional experience.
             However, <span style="font-weight: 600;">I have a big passion for programming</span> 
             & have projects I'd like to share with you.
             <br><br>
@@ -64,30 +44,30 @@
         <div class="photo">
           <img src="src/images/me.jpg" alt="A picture of me with my dog on a sunny day.">
         </div>
+        
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="linkedin">
+        <img src="src/images/icon-linkedin.png" alt="Visit my linkedin." class="linkedin-icon">
+        <button title="My linkedIn" onclick="window.location.href='https://www.linkedin.com/in/isaiah-dakin-0ab4a434b/';" class="linkedin-button"></button>
       </div>
 
-      <div class="buttons">
-        <div class="linkedin">
-          <img src="src/images/icon-linkedin.png" alt="Visit my linkedin." class="linkedin-icon">
-          <button title="My linkedIn" onclick="window.location.href='https://www.linkedin.com/in/isaiah-dakin-0ab4a434b/';" class="linkedin-button"></button>
-        </div>
-
-        <div class="git">
-          <img src="src/images/icon-github.png" alt="Visit my github." class="git-icon">
-          <button title="My GitHub" onclick="window.location.href='https://github.com/Isaiah-Dakin';" class="git-button"></button>
-        </div>
-
-        <div class="instagram">
-          <img src="src/images/instagram.webp" alt="Visit my instagram." class="instagram-icon">
-          <button title="My Instagram" onclick="window.location.href='https://www.instagram.com/isaiahdakin';" class="instagram-button"></button>
-        </div>
-
-        <div class="mail">
-          <img src="src/images/envelope.png" alt="Contact me via email." class="mail-icon">
-          <button title="Email Me" onclick="window.location.href='mailto:IsaiahDak16@gmail.com';" class="mail-button"></button>
-        </div>
+      <div class="git">
+        <img src="src/images/icon-github.png" alt="Visit my github." class="git-icon">
+        <button title="My GitHub" onclick="window.location.href='https://github.com/Isaiah-Dakin';" class="git-button"></button>
       </div>
-      
+
+      <div class="instagram">
+        <img src="src/images/instagram.webp" alt="Visit my instagram." class="instagram-icon">
+        <button title="My Instagram" onclick="window.location.href='https://www.instagram.com/isaiahdakin';" class="instagram-button"></button>
+      </div>
+
+      <div class="mail">
+        <img src="src/images/envelope.png" alt="Contact me via email." class="mail-icon">
+        <button title="Email Me" onclick="window.location.href='mailto:IsaiahDak16@gmail.com';" class="mail-button"></button>
+      </div>
     </div>
 
   </body>

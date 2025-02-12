@@ -1,119 +1,15 @@
-/* Stylesheet for index */
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family : monospace;
-}
-
-body 
-{
-    margin-top: 150px;
-    height: auto;
-    color: #faf9f7;
-}
-
-img
-{
-    border: 2px solid white;
-    width: 100%;
-    object-fit: cover;
-}
-
-h1
-{
-    font-family: 'Lucida Console', monospace;
-    font-size: 64px;
-}
-
-p
-{
-    word-wrap: break-word;
-    font-family: 'Courier New', monospace;
-    font-size: 30px;
-}
-
-a
-{
-    font-weight: 600;
-}
-
-span
-{
-    font-weight: 600;
-}
-
-a:link
-{
-    color: #4c06bd;
-}
-
-a:visited
-{
-    color: #4c06bd;
-}
-
-a:active
-{
-    color: white;
-}
-
-a:hover
-{
-    color: white;
-}
-
-.container
-{
-    margin-left: 200px;
-}
-
-.header-links
-{
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-
-    position: absolute;
-    margin-left: 65%; 
-    padding-top: 1%;
-    word-wrap: break-word;
-
-    font-size: 28px;
-}
-
-.header
-{
-    position: relative;
-    margin-top: -150px;
-    margin-left: -200px;   
-    margin-bottom: 6%;
-    padding-left: 8%;
-    padding-bottom: 1%;
-
-    display: flex;
-    flex-direction: row;
-    height: auto;
-
-    border-bottom: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-.column.is-narrow 
-{
-    float: right;
-}
+/* index style sheet */
 
 .info-box 
 {
     display: flex;
     width: 90%;
+    translate: 5%;
 }
 
 .info
 {
-    margin-right: 100px;
+    margin-right: 5%;
     width: auto;
 }
 
@@ -121,70 +17,14 @@ a:hover
 {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 65%;
     box-shadow: 0px 8px 30px rgba(120, 0, 255, 0.5);
 }
 
 .info-p
 {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-
-    width: auto;
-}
-
-.buttons
-{
-    padding-top: 25px;
-    position: relative;
-    border-style: none;
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    width: fit-content;
-    height: fit-content;
-    gap: 20px;
-}
-
-.mail, .linkedin, .git, .instagram
-{
-    border-radius: 8px;
-    position: relative;
-    width: 50px;
-    height: 50px;
-}
-
-.mail-icon, .linkedin-icon, .git-icon, .instagram-icon
-{
-    position: absolute;
-    background-color: transparent;
-    border-style: none;
-    color: transparent;
-    object-fit: cover;
-    width: 50px;
-}
-
-.mail-icon
-{
-    padding-top: 5px;
-}
-
-.mail-button, .linkedin-button, .git-button, .instagram-button
-{
-    position: absolute;
-    background-color: transparent;
-    border-style: none;
-    color: transparent;
-    width: 50px;
-    height: 50px;
-}
-
-.mail-button:hover, .linkedin-button:hover, .git-button:hover, .instagram-button:hover
-{
-    cursor: pointer;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
