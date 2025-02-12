@@ -6,6 +6,12 @@ button
     transition: transform 0.3s ease;
 }
 
+h1
+{
+    font-size: 56px;
+    text-align: center;
+}
+
 button:hover
 {
     cursor: pointer;

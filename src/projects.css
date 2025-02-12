@@ -9,15 +9,13 @@
 
 .grid 
 {
-    margin-left: 31%;
-    margin-right: 31%;
-    padding: 2%;
-
-    width: fit-content;
-    display: grid;
-    grid-template-columns: 300px 300px;
-    gap: 10%;
+    width: 100%;
     justify-content: center;
+
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 300px 300px;
+    
 }
 
 .grid-item 
