@@ -20,6 +20,13 @@
     justify-content: center;
     width: 45%;
     box-shadow: 0px 8px 30px rgba(120, 0, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.photo:hover
+{
+    cursor: pointer;
+    transform: scale(1.15)
 }
 
 .info-p

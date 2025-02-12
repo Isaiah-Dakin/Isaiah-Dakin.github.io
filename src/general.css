@@ -66,12 +66,6 @@ a:active, a:hover
     color: white;
 }
 
-.container
-{
-    width: fit-content;
-    height: fit-content;
-}
-
 .header-links
 {
     position: absolute;
