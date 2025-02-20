@@ -6,74 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Isaiah Dakin - Home</title>
-    <link rel="stylesheet" href="src/general.css">
-    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/index_new.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monomakh">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martian Mono">
+    <style>
+      .logo-text 
+      { 
+        line-height: 150%;
+        text-align: center;
+
+        font-family: "Monomakh", monospace;
+        font-size: 48px;
+        font-weight: 900;
+        text-decoration: none;
+
+        background: linear-gradient(to right, #7B1FA2, #E91E63);
+        -webkit-background-clip: text;
+            background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .intro
+      {
+        font-family: "Martian Mono", "Monomakh", monospace;
+      }
+    </style>
   </head>
 
   <body>
     <div class="background"></div>
-      
-    <div class="container">
+
+    <div class="box">
       <div class="header">
-        <div class="home">
-          <img src="src/images/icon-home.png" alt="Visit my home page." class="home-icon">
-          <button title="Home" onclick="window.location.href='/index.html';" class="home-button"></button>
-        </div>
-        <div class="header-links">
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/projects.html">Projects</a>
-          <a href="src/resume.pdf">Resume</a>
-        </div>
+        <div class="logo"><a href="/index.html" class="logo-text" title="isaiahdakin.ca">id</a></div>
+  
+        <a href="/about.html" title="about me" class="header-link">about</a>
+        <a href="/projects.html" title="my projects" class="header-link">projects</a>
+        <a href="/src/resume.pdf" title="my resume" class="header-link">resume</a>
+        <a href="/contact.html" title="contact me" class="header-contact">contact</a>
       </div>
 
-      <div class="info-box">
-        <div class="info">
-          <h1>Hi, I'm Isaiah.<br>I'm a Student & Programmer.</h1>
-          <p class="info-p">
-            As a student, I don't boast a hefty list of professional experience.
-            However, <span style="font-weight: 600;">I have a big passion for programming</span> 
-            & have projects I'd like to share with you.
-            <br><br>
-            Through personal projects & my educational journey, I have gained
-            experience in key areas such as <span style="font-weight: 600;">software development</span>, 
-            <span style="font-weight: 600;">project management</span>,
-            & <span style="font-weight: 600;">team communication</span>.
+      <div class="content">
+        
+        <div class="box-1">
+          <div class="sub-box-1"> </div>
+          <div class="sub-box-2">
+            <img src="src/images/me.jpg" alt="A picture of me with my dog Gracie on a sunny day." class="portrait">
+          </div>
+          <div class="sub-box-3"> </div>
+        </div>
+
+        <div class="box-2">
+          <p class="intro">
+            Hi, I'm <span style="color: #7B1FA2; font-weight: 600;">Isaiah</span>, a student & programmer. As a student, I don't boast a hefty list of 
+            professional experience. However, I have a big passion for programming & have 
+            <span style="color: #7B1FA2; font-weight: 600;">projects I'd like to share with you</span>.
           </p>
         </div>
-        
-        <div class="photo">
-          <img src="src/images/me.jpg" alt="A picture of me with my dog Gracie on a sunny day." title="Gracie & I">
-        </div>
-      </div>
 
-      <div class="buttons">
-        <div class="linkedin">
-          <img src="src/images/icon-linkedin.png" alt="Visit my linkedin." class="linkedin-icon">
-          <button title="My linkedIn" onclick="window.location.href='https://www.linkedin.com/in/isaiahdakin';" class="linkedin-button"></button>
-        </div>
+        <div class="buttons" title="visit my linkedin">
+          <div class="linkedin">
+            <img src="src/images/icon-linkedin.png" alt="visit my linkedin" class="linkedin-icon">
+            <button onclick="window.location.href='https://www.linkedin.com/in/isaiahdakin';" class="linkedin-button"></button>
+          </div>
+    
+          <div class="git" title="visit my github">
+            <img src="src/images/icon-github.png" alt="visit my github" class="git-icon">
+            <button onclick="window.location.href='https://github.com/Isaiah-Dakin';" class="git-button"></button>
+          </div>
+    
+          <div class="instagram" title="visit my instagram">
+            <img src="src/images/instagram.webp" alt="visit my instagram" class="instagram-icon">
+            <button onclick="window.location.href='https://www.instagram.com/isaiahdakin';" class="instagram-button"></button>
+          </div>
   
-        <div class="git">
-          <img src="src/images/icon-github.png" alt="Visit my github." class="git-icon">
-          <button title="My GitHub" onclick="window.location.href='https://github.com/Isaiah-Dakin';" class="git-button"></button>
-        </div>
-  
-        <div class="instagram">
-          <img src="src/images/instagram.webp" alt="Visit my instagram." class="instagram-icon">
-          <button title="My Instagram" onclick="window.location.href='https://www.instagram.com/isaiahdakin';" class="instagram-button"></button>
-        </div>
-  
-        <div class="mail">
-          <img src="src/images/envelope.png" alt="Contact me via email." class="mail-icon">
-          <button title="Email Me" onclick="window.location.href='mailto:IsaiahDak16@gmail.com';" class="mail-button"></button>
+          <div class="spotify" title="visit my spotify">
+            <img src="src/images/icon-spotify.png" alt="visit my spotify" class="spotify-icon">
+            <button onclick="window.location.href='https://open.spotify.com/user/r74p9kub0d9sqf0x2whfaiamh?si=c92ede964ef04a62';" class="spotify-button"></button>
+          </div>
+
+          <div class="steam" title="visit my steam">
+            <img src="src/images/logo-steam.png" alt="visit my steam" class="steam-icon">
+            <button onclick="window.location.href='https://steamcommunity.com/id/Doc_Zeus/';" class="steam-button"></button>
+          </div>
         </div>
 
-        <div class="spotify">
-          <img src="src/images/icon-spotify.png" alt="Visit my spotify." class="spotify-icon">
-          <button title="Visit my spotify." onclick="window.location.href='https://open.spotify.com/user/r74p9kub0d9sqf0x2whfaiamh?si=c92ede964ef04a62';" class="spotify-button"></button>
-        </div>
-        
-      </div>
+       </div>
     </div>
 
   </body>
