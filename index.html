@@ -1,101 +1,95 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Isaiah Dakin - Home</title>
-    <link rel="stylesheet" href="src/index_new.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monomakh">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martian Mono">
-    <style>
-      .logo-text 
-      { 
-        line-height: 150%;
-        text-align: center;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Isaiah Dakin - Home</title>
+        <link rel="stylesheet" href="src/index.css">
+        <link rel="stylesheet" href="src/nav.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
+        <style>
+            body, .nav-button
+            {
+                font-family: "Oxanium", monospace;
+            }
 
-        font-family: "Monomakh", monospace;
-        font-size: 48px;
-        font-weight: 900;
-        text-decoration: none;
-        color: white;
+            .logo-text 
+            { 
+              line-height: 150%;
+              text-align: center;
+      
+              font-family: "Oxanium", monospace;
+              font-size: 48px;
+              font-weight: 900;
+              text-decoration: none;
+              color: white;
+      
+              transition: color 0.18s ease;
+            }
+      
+            .logo-text:hover
+            {
+              color: #040206;
+            }
+        </style>
+    </head>
 
-        transition: color 0.18s ease;
-      }
+    <body>
+        <div class="box">
+            <div class="container">
 
-      .logo-text:hover
-      {
-        color: #040206;
-      }
+                <div class="background-overlay">
+                    <div class="background"></div>
+                </div>
+                <div class="container-background"></div>
+                <div class="nav">   
+                    <button class="nav-button" title="Projects" onclick="location.href='index.html';">PROJECTS</button> 
+                    <button class="nav-button" title="Links" onclick="location.href='index.html';">LINKS</button> 
+                    <div class="divider"></div>
+                    <div class="logo"><a href="/index.html" class="logo-text" title="isaiahdakin.ca">id</a></div>   
+                    <div class="divider"></div>
+                    <button class="nav-button" title="About" onclick="location.href='index.html';">ABOUT</button>
+                    <button class="nav-button" title="Contact" onclick="location.href='index.html';">CONTACT</button>      
+                </div>
 
-      .intro
-      {
-        font-family: "Martian Mono", "Monomakh", monospace;
-      }
-    </style>
-  </head>
+                <div class="portrait">
+                    <img src="src/images/me.jpg" alt="Gracie & I on a sunny summer day." class="portrait-image">
+                </div>
 
-  <body>
-    <div class="background"></div>
+                <div class="buttons">
 
-    <div class="box">
-      <div class="header">
-        <div class="logo"><a href="/index.html" class="logo-text" title="isaiahdakin.ca">id</a></div>
-  
-        <a href="/about.html" title="about me" class="header-link">about</a>
-        <a href="/projects.html" title="my projects" class="header-link">projects</a>
-        <a href="/src/resume.pdf" title="my resume" class="header-link">resume</a>
-        <a href="/contact.html" title="contact me" class="header-contact">contact</a>
-      </div>
+                    <div class="button-container">
+                        <img src="src/images/icon-github.png" alt="github logo." class="button-icon">
+                        <button title="GitHub/Isaiah-Dakin" onclick="window.location.href='https://github.com/Isaiah-Dakin';" class="index-button"></button>
+                    </div>
 
-      <div class="content">
-        
-        <div class="box-1">
-          <div class="sub-box-1"> </div>
-          <div class="sub-box-2">
-            <img src="src/images/me.jpg" alt="A picture of me with my dog Gracie on a sunny day." class="portrait">
-          </div>
-          <div class="sub-box-3"> </div>
+                    <div class="button-container">
+                        <img src="src/images/icon-linkedin.png" alt="linkedin logo." class="button-icon">
+                        <button title="In/isaiahdakin" onclick="window.location.href='https://www.linkedin.com/in/isaiahdakin';" class="index-button"></button>
+                    </div>
+
+                    <div class="button-container">
+                        <img src="src/images/logo-mail.png" alt="email logo." class="button-icon">
+                        <button title="Email Me" onclick="window.location.href='mailto:IsaiahDak16@gmail.com';" class="index-button"></button>
+                    </div>
+
+                </div>
+
+                <div class="info-container">
+                    <p class="intro-paragraph">
+                    <span style="font-size:60px; font-weight: 900;">Hi, I'm Isaiah Dakin.</span>
+                    <br>
+                    <span style="font-size:32px; font-weight:100; color: white;">
+                        Welcome to my website, here you can see what I'm working on. I'm passionate about programming 
+                        & have things I'd like to share with you &#128156;
+                    </span>
+                    </p>
+                </div>
+
+            </div>
         </div>
+    </body>
 
-        <div class="box-2">
-          <p class="intro">
-            Hi, I'm <span style="color: #9575CD; font-weight: 600;">Isaiah Dakin</span>. Welcome to my website, 
-            here you can see what I'm working on. I'm passionate about programming & have things I'd like to share 
-            with you &#128156;
-          </p>
-        </div>
-
-        <div class="buttons" title="visit my linkedin">
-          <div class="linkedin">
-            <img src="src/images/icon-linkedin.png" alt="visit my linkedin" class="linkedin-icon">
-            <button onclick="window.location.href='https://www.linkedin.com/in/isaiahdakin';" class="linkedin-button"></button>
-          </div>
-    
-          <div class="git" title="visit my github">
-            <img src="src/images/icon-github.png" alt="visit my github" class="git-icon">
-            <button onclick="window.location.href='https://github.com/Isaiah-Dakin';" class="git-button"></button>
-          </div>
-    
-          <div class="instagram" title="visit my instagram">
-            <img src="src/images/instagram.webp" alt="visit my instagram" class="instagram-icon">
-            <button onclick="window.location.href='https://www.instagram.com/isaiahdakin';" class="instagram-button"></button>
-          </div>
-  
-          <div class="spotify" title="visit my spotify">
-            <img src="src/images/icon-spotify.png" alt="visit my spotify" class="spotify-icon">
-            <button onclick="window.location.href='https://open.spotify.com/user/r74p9kub0d9sqf0x2whfaiamh?si=c92ede964ef04a62';" class="spotify-button"></button>
-          </div>
-
-          <div class="steam" title="visit my steam">
-            <img src="src/images/logo-steam.png" alt="visit my steam" class="steam-icon">
-            <button onclick="window.location.href='https://steamcommunity.com/id/Doc_Zeus/';" class="steam-button"></button>
-          </div>
-        </div>
-
-       </div>
-    </div>
-
-  </body>
 </html>
