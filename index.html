@@ -45,12 +45,12 @@
                 </div>
                 <div class="container-background"></div>
                 <div class="nav">   
-                    <button class="nav-button" title="Projects" onclick="location.href='index.html';">PROJECTS</button> 
-                    <button class="nav-button" title="Links" onclick="location.href='index.html';">LINKS</button> 
+                    <button class="nav-button" title="Projects" onclick="location.href='#projects-container'">PROJECTS</button> 
+                    <button class="nav-button" title="About" onclick="location.href='#about-container';">ABOUT</button> 
                     <div class="divider"></div>
-                    <div class="logo"><a href="/index.html" class="logo-text" title="isaiahdakin.ca">id</a></div>   
+                    <div class="logo"><a href="/index.html" class="logo-text" title="isaiahdakin.ca">Id</a></div>   
                     <div class="divider"></div>
-                    <button class="nav-button" title="About" onclick="location.href='index.html';">ABOUT</button>
+                    <button class="nav-button" title="Resume" onclick="location.href='src/resume.pdf';">RESUME</button>
                     <button class="nav-button" title="Contact" onclick="location.href='index.html';">CONTACT</button>      
                 </div>
 
@@ -76,18 +76,110 @@
                     </div>
 
                 </div>
-
-                <div class="info-container">
+                
+                <!-- content area -->
+                <div class="content-container">
                     <p class="intro-paragraph">
-                    <span style="font-size:60px; font-weight: 900;">Hi, I'm Isaiah Dakin.</span>
-                    <br>
-                    <span style="font-size:32px; font-weight:100; color: white;">
-                        Welcome to my website, here you can see what I'm working on. I'm passionate about programming 
-                        & have things I'd like to share with you &#128156;
-                    </span>
+                        <span style="font-size:60px; font-weight: 900;">Hi, I'm Isaiah Dakin.</span>
+                        <br>
+                        <span style="font-size:32px; font-weight:100; color: white;">
+                            Welcome to my website, here you can see what I'm working on. I'm passionate about programming 
+                            & have things I'd like to share with you &#128156;
+                        </span>
                     </p>
-                </div>
 
+                    <div class="projects-container" id="projects-container">
+                        <p class="intro-paragraph">
+                            <span style="font-size:60px; font-weight: 900;">Featured Projects.</span>
+                            <br>
+                        </p>
+
+                        <div class="projects-grid">
+                            <div class="grid-item" title="ULTRADUNGEON">
+                                <img class="grid-image"src="src/images/project-thumbnail-ud.png"></img>
+                                <img class="grid-logo-ud" src="src/images/ultra-big-yellow.png"></img>
+                                <p class="grid-text">
+                                    Escape the guttural bowels of hell in ULTRADUNGEON. A high speed rougelike, bullet hell, extraction shooter. 
+                                </p>
+                                <a href="ultradungeon.html"><div class="shine-overlay"></div></a>
+                            </div>
+
+                            <div class="grid-item" title="isaiahdakin.ca">
+                                <img class="grid-image"src="src/images/project-thumbnail-web.png"></img>
+                                <img class="grid-logo" src="src/images/web-logo-pink.png"></img>
+                                <p class="grid-text">
+                                    My first exploration of web development using HTML, CSS, and GitHub pages. 
+                                </p>
+                                <a href="index.html"><div class="shine-overlay"></div></a>
+                            </div>
+
+                            <div class="grid-item" title="ultradungeon.ca">
+                                <img class="grid-image"src="src/images/project-thumbnail-ud-web.png"></img>
+                                <img class="grid-logo" src="src/images/web-ud-logo.png"></img>
+                                <p class="grid-text">
+                                    Another dive into simple web development, this time it's all about ULTRADUNGEON. 
+                                </p>
+                                <a href="https://ultradungeon.ca/"><div class="shine-overlay"></div></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-container" id="about-container">
+                        <p class="intro-paragraph">
+                            <span style="font-size:60px; font-weight: 900;">Who Am I?</span>
+                            <br>
+                            <span style="font-size:32px; font-weight:100; color: white;">
+                                &emsp; My name is Isaiah Dakin, a 22 year old student & programming hobbyist. I am currently in
+                                my 5th year of UNB Fredericton's Bachelor of Computer Science degree, next year being the
+                                final of my studies. Currently & Following my graduation I will be seeking junior level
+                                development, research, or IT positions.
+                                <br><br>
+                                &emsp; I took an interest in computers & in programming from a young age. I was just around 11yrs 
+                                when a family friend & developer of 20yrs began mentoring a small group including me. Ever since
+                                then, my passion for programming has only grown. My primary project today is the indie title 
+                                <span style="font-style: italic;">ULTRADUNGEON</span> which I have been co-developing with a fellow
+                                BCs graduate & friend <a href="https://nathanyoung.ca">Nathan Young</a>. Please see the featured projects 
+                                tab to read more about <span style="font-style: italic;">ULTRADUNGEON</span> !
+                                <br><br>
+                                &emsp; As a student, I can't offer a hefty list of prior professional experience. However, I have a 
+                                big passion for this field, learning new things, and hope to begin my career soon.
+                                <br><br>
+                                <a href="">Contact me today</a> &#128156;
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="footer">
+
+                        <div class="footer-button-container" title="GitHub/Isaiah-Dakin">
+                            <img src="src/images/icon-github.png" class="footer-button-img">
+                            <button class="footer-button" onclick="window.location.href='https://github.com/Isaiah-Dakin';"></button>
+                        </div>
+
+                        <div class="footer-button-container" title="In/isaiahdakin">
+                            <img src="src/images/icon-linkedin.png" class="footer-button-img">
+                            <button class="footer-button" onclick="window.location.href='https://www.linkedin.com/in/isaiahdakin';"></button>
+                        </div>
+
+                        <div class="footer-button-container" title="@isaiahdakin">
+                            <img src="src/images/icon-instagram.webp" class="footer-button-img">
+                            <button class="footer-button" onclick="window.location.href='https://www.instagram.com/isaiahdakin';"></button>
+                        </div>
+
+                        <div class="footer-button-container" title="@Dr.Zeus">
+                            <img src="src/images/icon-steam.png" class="footer-button-img">
+                            <button class="footer-button" onclick="window.location.href='https://steamcommunity.com/id/Doc_Zeus/';"></button>
+                        </div>
+
+                        <div class="footer-button-container" title="@Sai">
+                            <img src="src/images/icon-spotify.png" class="footer-button-img">
+                            <button class="footer-button" onclick="window.location.href='https://open.spotify.com/user/r74p9kub0d9sqf0x2whfaiamh?si=a17ca90944a4400a';"></button>
+                        </div>
+                    </div>
+                    
+                    <p class="last-updated"><span style="font-size: 12px;">LAST UPDATED: 03/06/25</span></p>
+
+                </div>
             </div>
         </div>
     </body>
