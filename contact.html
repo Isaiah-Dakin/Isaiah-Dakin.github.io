@@ -5,11 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Isaiah Dakin - ULTRADUNGEON</title>
-        <link rel="stylesheet" href="src/ultradungeon.css">
-        <link rel="stylesheet" href="src/nav.css">
+        <title>Isaiah Dakin - Contact</title>
         <link rel="stylesheet" href="src/footer.css">
+        <link rel="stylesheet" href="src/contact.css">
+        <link rel="stylesheet" href="src/nav.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
+
+        <script src="src/scripts/copy-text.js"></script>
+
         <style>
             body, .nav-button
             {
@@ -54,45 +57,25 @@
                     <button class="nav-button" title="Resume" onclick="location.href='src/resume.pdf';">RESUME</button>
                     <button class="nav-button" title="Contact" onclick="location.href='contact.html';">CONTACT</button>      
                 </div>
-
-                <div class="ud-logo">
-                    <img src="src/images/ultra-big-yellow.png" class="ud-logo-image"></div>
-                </div>
                 
                 <!-- content area -->
                 <div class="content-container">
                     <p class="intro-paragraph">
-                        <span style="font-size:60px; font-weight: 900;">What Is ULTRADUNGEON?</span>
-                        <br>
-                        <span style="font-size:20px; font-weight: 900;">CONTRIBUTORS &#128156;:&emsp;</span>
-                        <a href="https://nathanyoung.ca/" style="font-size: 20px;">Nathan Young,</a>
-                        <a href="index.html" style="font-size: 20px;">Isaiah Dakin</a>
-                        <br>
-                        <span style="font-size:32px; font-weight:100; color: white;">
-                            &emsp; ULTRADUNGEON is an indie rougelike that has been in development since early 2023. It's a passion 
-                            project that my co-developer and I have put blood, sweat, and tears into since its inception. The
-                            game is a conglomeration of genres like bullet hell, rougelike, dungeon crawler, extraction fighter,
-                            & rpg. As of now, ULTRADUNGEON has over 200 unique hand sprited items, four unique NPCs, functional
-                            inventory & shop UI, & much more which will be discussed later on this page!
-                        </span>
+                        <span style="font-size:68px; font-weight: 900;">I can't wait to hear from you!</span>
                     </p>
 
-                    <div class="about-container" id="about-container">
-                        <p class="intro-paragraph">
-                            <span style="font-size:60px; font-weight: 900;">What Makes it Possible?</span>
-                            <br>
-                            <a href="https://fund.godotengine.org/" style="font-size: 20px;">Support the Godot Engine &#128156;</a>
-                            <br>
-                            <span style="font-size:32px; font-weight:100; color: white;">
-                                &emsp; ULTRADUNGEON was initially planned to be developed using the <a href="https://unity.com/" style="font-size:30px;">UNITY</a> engine, however shortly
-                                after the project's inception we made the decision to switch to the GODOT engine. Today
-                                the project is built upon the <a href="https://godotengine.org/" style="font-size:30px;">GODOT</a> 4.3 game engine.
-                                <br><br>
-                                &emsp; In these two years, I have grown to truly love the Godot engine & its features. I cannot recommend this open
-                                source game engine enough. If you or someone you know plan to make a game in the future please give Godot a 
-                                try!
-                            </span>
-                        </p>
+                    <div class="contact">
+                        <div class="copy" title="Copy Me!"> 
+                            <span class="copy-text">IsaiahDak16@gmail.com</span>
+                            <img src="src/images/icon-copy.png" class="copy-img">
+                            <button class="copy-button" onclick="copyText('IsaiahDak16@gmail.com')"></button>
+                        </div>
+    
+                        <div class="copy" title="Copy Me!"> 
+                            <span class="copy-text">(506)470-1032</span>
+                            <img src="src/images/icon-copy.png" class="copy-img">
+                            <button class="copy-button" onclick="copyText('(506)470-1032')"></button>
+                        </div>
                     </div>
 
                     <div class="footer">

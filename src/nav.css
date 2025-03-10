@@ -47,20 +47,6 @@
     transition: color 0.18s, background-color 0.18s;
 }
 
-.home-logo {
-    height: 80%;
-    transition: height 0.18s;
-}
-
-.home-logo {
-    fill:#9575CD;
-}
-
-.home-logo:hover {
-    height: 90%;
-    cursor: pointer;
-}
-
 .divider {
     border-left: 1px solid rgba(100, 100, 100, 0.5);
     width: 2px;
@@ -81,8 +67,7 @@
     border-radius: 5px;
     border: 3px solid #9575CD;
 
-    transition: color 0.25s ease;
-    transition: background-color 0.18s ease;
+    transition: all 0.18s ease;
 }
 
 .logo:hover
