@@ -1,0 +1,68 @@
+body, .nav-button
+{
+    font-family: "Oxanium", monospace;
+}
+
+a
+{
+    text-decoration: none;
+    font-weight: 900;
+    color: #9575CD;
+}
+
+a:hover
+{
+    color: white;
+}
+
+a:active
+{
+    color: #9575CD;
+}
+
+.header1
+{
+    font-size: 4.5vw;
+    font-weight: 900;
+    color: #9575CD;
+}
+
+.header2
+{
+    font-size: 2vw;
+    font-weight: 900;
+    color: #9575CD;
+}
+
+.intro-paragraph
+{
+    width: 80%;
+    padding-left: 19%;
+    margin-top: 4%;
+    position: relative;
+
+    color: white;
+    font-size: 2vw;
+    word-wrap: break-word;
+}
+
+.logo-text 
+{ 
+    height: fit-content;
+    width: fit-content;
+    
+    text-align: center;
+
+    font-family: "Oxanium", monospace;
+    font-size: 2.5vw;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+
+    transition: color 0.18s ease;
+}
+
+.logo-text:hover
+{
+  color: #040206;
+}

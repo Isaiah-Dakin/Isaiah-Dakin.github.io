@@ -3,13 +3,14 @@
     position: relative;
     z-index: 1;
     height: 10%;
+    width: 100%;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 1%;
 
     margin-bottom: 5%;
-    padding: 6px 30% 6px 30%;
 
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid rgba(100, 100, 100, 0.5);
@@ -19,7 +20,7 @@
     width: 15%;
     height: 50%;
 
-    font-size: 22px;
+    font-size: 2vw;
     font-weight: lighter;
 
     border-radius: 4px;
@@ -34,43 +35,4 @@
     color: black;
     background-color: #9575CD;
     cursor: pointer;
-}
-
-.home-button {
-    width: 20%;
-    height: 100%;
-
-    border-radius: 4px;
-    border-style: none;
-    background-color: transparent;
-    
-    transition: color 0.18s, background-color 0.18s;
-}
-
-.divider {
-    border-left: 1px solid rgba(100, 100, 100, 0.5);
-    width: 2px;
-    height: 60%;
-    display: inline;
-}
-
-.logo
-{
-    width: 70px;
-    height: 70px;
-    margin-top: .5%;
-
-    display: flex;
-    justify-content: center;
-
-    background-color: transparent;
-    border-radius: 5px;
-    border: 3px solid #9575CD;
-
-    transition: all 0.18s ease;
-}
-
-.logo:hover
-{
-    background-color: #9575CD;
 }
