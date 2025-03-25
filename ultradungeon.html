@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Isaiah Dakin - ULTRADUNGEON</title>
+        <link rel="stylesheet" href="src/index.css">
         <link rel="stylesheet" href="src/ultradungeon.css">
         <link rel="stylesheet" href="src/nav.css">
         <link rel="stylesheet" href="src/footer.css">
@@ -15,19 +16,22 @@
 
     <body>
         <div class="box">
+
+            <div class="nav">   
+                <button class="nav-button" title="Projects" onclick="location.href='index.html#projects-container'">PROJECTS</button> 
+                <button class="nav-button" title="About" onclick="location.href='index.html#about-container';">ABOUT</button> 
+                <button class="nav-button" title="About" onclick="location.href='index.html';">HOME</button>
+                <button class="nav-button" title="Resume" onclick="location.href='src/resume.pdf';">RESUME</button>
+                <button class="nav-button" title="Contact" onclick="location.href='contact.html';">CONTACT</button>      
+            </div>
+
             <div class="container">
 
                 <div class="background-overlay">
                     <div class="background"></div>
                 </div>
+
                 <div class="container-background"></div>
-                <div class="nav">   
-                    <button class="nav-button" title="Projects" onclick="location.href='index.html#projects-container'">PROJECTS</button> 
-                    <button class="nav-button" title="About" onclick="location.href='index.html#about-container';">ABOUT</button> 
-                    <button class="nav-button" title="About" onclick="location.href='index.html';">HOME</button>
-                    <button class="nav-button" title="Resume" onclick="location.href='src/resume.pdf';">RESUME</button>
-                    <button class="nav-button" title="Contact" onclick="location.href='contact.html';">CONTACT</button>      
-                </div>
 
                 <div class="ud-logo">
                     <img src="src/images/ultra-big-yellow.png" class="ud-logo-image"></div>
@@ -38,30 +42,41 @@
                     <p class="intro-paragraph">
                         <span class="header1">What Is ULTRADUNGEON?</span>
                         <br>
-                        <span style="font-size:20px; font-weight: 900;">CONTRIBUTORS &#128156;:&emsp;</span>
-                        <a href="https://nathanyoung.ca/" style="font-size: 20px;">Nathan Young,</a>
-                        <a href="index.html" style="font-size: 20px;">Isaiah Dakin</a>
+                        <span class="header3">CONTRIBUTORS &#128156;:&emsp;</span>
+                        <a href="https://nathanyoung.ca/" style="font-size: 2vmin;">Nathan Young,</a>
+                        <a href="index.html" style="font-size: 2vmin;">Isaiah Dakin</a>
                         <br>
                         ULTRADUNGEON is an indie roguelike that has been in development since early 2023. It's a passion 
                         project that my co-developer, <a href="https://nathanyoung.ca">Nathan Young</a>, and I have put blood, sweat, and tears into since its inception. The
                         game is a conglomeration of genres, including bullet hell, roguelike, dungeon crawler, extraction fighter,
                         & RPG. As of now, ULTRADUNGEON has over two hundred unique hand-sprited items, four unique NPCs, functional
                         inventory & shop UI, and much more, which will be discussed later on this page!
+                        <br><br>
+                        Read more about ULTRADUNGEON on the <a href="https://ultradungeon.ca">official UD web page</a> &#128156;
+                    </p>
+
+                    <p class="intro-paragraph">
+                        <span class="header1">Current Features.</span><br>
+                        &#8226; Over 200 unique items including 80 weapons.<br>
+                        &#8226; 3 player classes to choose from.<br>
+                        &#8226; 4 unique NPCs with dozens of dialogue options each.<br>
+                        &#8226; Enemies with random loot drops.<br>
+                        &#8226; An interactive inventory and storage system.<br>
+                        &#8226; A dynamic shop menu, with discounts and refunds.<br>
+                        &#8226; A status effect system, used by weapons, consumables and enemies.<br>
+                        &#8226; A crafting system, with several types of crafting stations.<br>
+                        &#8226; Several types of lootable items, including forageables, chests and money-filled pots.<br>
                     </p>
 
                     <div class="about-container">
                         <p class="intro-paragraph">
-                            <span class="header1"">What Makes it Possible?</span>
+                            <span class="header1">What Makes it Possible?</span>
                             <br>
-                            <a href="https://fund.godotengine.org/" style="font-size: 20px;">Support the Godot Engine &#128156;</a>
+                            <a href="https://fund.godotengine.org/" style="font-size: 2vmin;">Support the Godot Engine &#128156;</a>
                             <br>
                             ULTRADUNGEON was initially planned to be developed using the <a href="https://unity.com/" style="font-size:30px;">UNITY</a> engine, however shortly
                             after the project's inception we made the decision to switch to the GODOT engine. Today
                             the project is built upon the <a href="https://godotengine.org/" style="font-size:30px;">GODOT</a> 4.3 game engine.
-                            <br><br>
-                            In the past two years, I have grown to truly love the Godot engine & its features. I cannot recommend this open
-                            source game engine enough. If you or someone you know plans to make a game, please give Godot a 
-                            try!
                         </p>
                     </div>
 
@@ -93,7 +108,7 @@
                         </div>
                     </div>
                     
-                    <p class="last-updated"><span style="font-size: 12px;">LAST UPDATED: 03/17/25</span></p>
+                    <p class="last-updated">LAST UPDATED: 03/24/25</p>
 
                 </div>
             </div>

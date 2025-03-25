@@ -27,12 +27,11 @@ html
     flex-direction: column;
 
     border: 1px solid rgba(100, 100, 100, 0.5);
-    border-radius: 4px;
 }
 
 .container
 {
-    position: absolute;
+    position: relative;
     
     width: 100%;
     height: 100vh;
@@ -43,10 +42,9 @@ html
     position: absolute;
     width: 100%;
     height: fit-content;
+
     background-position: center;
     background-size: cover; 
-
-    background-color: rgba(0, 0, 0, .5);
 
     z-index: -3;
 }
@@ -56,6 +54,7 @@ html
     position: absolute;
     width: 100%;
     height: 100vh;
+
     background-color: rgba(0, 0, 0, .75);
 }
 
@@ -74,30 +73,25 @@ html
 
 .portrait
 {
-    height: 38.5vh;
+    position: relative;
+    height: 80%;
     width: 100%;
 
     display: flex;
     justify-content: center;
-
-    margin-bottom: 14%;
-
-    z-index: 1;
+    align-items: center;
 }
 
 .portrait-image
 {
-    width: 39vh;
-    height: 100%;
-
-
+    width: 50vmin;
+    height: 50vmin;
 
     object-fit: cover;
+    image-rendering: optimizeQuality;
 
     border-radius: 50%;
     border: 3px solid rgba(149, 117, 205, 0);
-
-    z-index: 1;
 
     transition: all 0.3s ease;
 }
@@ -108,23 +102,25 @@ html
     border-color: #9575CD;
 }
 
+/* styling for buttons */
 .buttons
 {
     position: relative;
+    height: 20%;
    
     display: flex;
     flex-direction: row;
-    gap: 8vw;
+    gap: 5%;
+    
     justify-content: center;
-
-    height: 7%;
+    align-items: center;
 }
 
 .button-container
 {
     position: relative;
-    width: 35vh;
-    height: 100%;
+    width: 17%;
+    height: 40%;
 
     display: flex;
     justify-content: center;
@@ -170,23 +166,23 @@ html
 .button-icon
 {
     position: absolute;
-    object-fit: cover;
+    width: 6vmin;
+    height: 6vmin;
 
-    width: 6vh;
-    height: 90%;
+    object-fit: cover;
 
     background-color: transparent;
     border-style: none;
     color: transparent;
 }
 
+/* styling for content */
 .content-container
 {
     position: absolute;
 
     width: 100%;
     height: fit-content;
-    margin-top: 2%;
 
     display: flex;
     flex-direction: column;
@@ -210,7 +206,8 @@ html
     grid-template-columns: 400px 400px 400px;
     gap: 20px;
 
-    padding-left: 19%;
+
+    padding-left: 10%;
 }
 
 .grid-item 
