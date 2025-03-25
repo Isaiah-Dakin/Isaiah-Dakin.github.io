@@ -1,13 +1,14 @@
 .footer
 {
     position: relative;
-    z-index: 1;
     height: 10%;
+
+    margin-top: 5%;
     margin-bottom: 1%;
 
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 2vmin;
 
     justify-content: center;
 }
@@ -15,9 +16,8 @@
 .footer-button-container
 {
     position: relative;
-
-    width: 50px;
-    height: 50px;
+    width: 5vmin;
+    height: 5vmin;
 
     transition: all .18s ease;
 }
@@ -30,7 +30,6 @@
 .footer-button 
 {
     position: absolute;
-
     width: 100%;
     height: 100%;
 
@@ -51,7 +50,10 @@
     position: relative;
     width: 100%;
     height: fit-content;
+
     display: flex;
     justify-content: center;
+
+    margin-top: .5vmin;
     margin-bottom: 1%;
 }

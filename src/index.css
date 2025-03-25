@@ -63,7 +63,7 @@ html
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url('/src/images/bg.jpg');
+    background-image: url('/src/images/bg.gif');
     background-position: center;
     background-size: cover; 
     image-rendering: crisp-edges;
@@ -126,7 +126,7 @@ html
     justify-content: center;
     align-items: center;
     
-    border-radius: 50px;
+    border-radius: 50vmin;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #9575CD;
 
@@ -187,6 +187,9 @@ html
     display: flex;
     flex-direction: column;
 
+    justify-content: center;
+    align-items: center;
+
     background-color: rgba(0, 0, 0, 0.7);
     border-top: 1px solid rgba(100, 100, 100, 0.5);
 }
@@ -196,26 +199,34 @@ html
     position: relative;
     width: 100%;
     height: fit-content;
+
+    display: flex;
     padding-top: 2%;
     margin-bottom: 2%;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-grid
 {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    gap: 20px;
+    position: relative;
+    width: 90%;
+    height: fit-content;
 
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: 2vw;
 
-    padding-left: 10%;
+    justify-content: space-evenly;
 }
 
 .grid-item 
 {
     position: relative;
-
-    height: 350px;
-    width: 400px;
+    height: 50vmin;
+    width: 60vmin;
 
     background-color: transparent;
     border-radius: 8px;
@@ -295,4 +306,7 @@ html
     height: fit-content;
     padding-bottom: 2%;
     margin-bottom: 2%;
+
+    justify-content: center;
+    align-items: center;
 }
