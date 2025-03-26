@@ -16,8 +16,8 @@
 .footer-button-container
 {
     position: relative;
-    width: 5vmin;
-    height: 5vmin;
+    width: 7vmin;
+    height: 7vmin;
 
     transition: all .18s ease;
 }

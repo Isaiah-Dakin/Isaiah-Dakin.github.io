@@ -32,7 +32,6 @@ html
 .container
 {
     position: relative;
-    
     width: 100%;
     height: 100vh;
 }
@@ -225,7 +224,7 @@ html
 .grid-item 
 {
     position: relative;
-    height: 50vmin;
+    height: calc(fit-content + 5vmin);
     width: 60vmin;
 
     background-color: transparent;
@@ -266,7 +265,7 @@ html
 
 .grid-logo-ud
 {
-    width: 85%;
+    width: 90%;
     height: 45%;
 }
 
