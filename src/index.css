@@ -224,7 +224,7 @@ html
 .grid-item 
 {
     position: relative;
-    height: calc(fit-content + 5vmin);
+    height: 55vmin;
     width: 60vmin;
 
     background-color: transparent;
