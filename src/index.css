@@ -31,7 +31,7 @@ html
 
 .container
 {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100vh;
 }
@@ -118,8 +118,8 @@ html
 .button-container
 {
     position: relative;
-    width: 17%;
-    height: 40%;
+    width: 10vmin;
+    height: 10vmin;
 
     display: flex;
     justify-content: center;
@@ -127,7 +127,7 @@ html
     
     border-radius: 50vmin;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #9575CD;
+
 
     transition: all 0.18s ease;
 }
@@ -188,7 +188,7 @@ html
 
     justify-content: center;
     align-items: center;
-
+    
     background-color: rgba(0, 0, 0, 0.7);
     border-top: 1px solid rgba(100, 100, 100, 0.5);
 }
@@ -210,13 +210,13 @@ html
 .projects-grid
 {
     position: relative;
-    width: 90%;
+    width: 100vw;
     height: fit-content;
 
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    gap: 2vw;
+    gap: 20px;
 
     justify-content: space-evenly;
 }
@@ -224,12 +224,15 @@ html
 .grid-item 
 {
     position: relative;
-    height: 55vmin;
-    width: 60vmin;
+    height: fit-content;
+    width: 55vmin;
+
+    justify-content: center;
+    align-items: center;
 
     background-color: transparent;
     border-radius: 8px;
-    border: 2px solid #9575CD;
+    border: 1px solid #9575CD;
     color: white;
     
     transition: all 0.3s ease;
@@ -260,20 +263,22 @@ html
     right: 5%;
 
     width: 90%;
-    height: 25%;
+    height: 30%;
 }
 
 .grid-logo-ud
 {
-    width: 90%;
+    top: 1%;
     height: 45%;
+    image-rendering: pixelated;
 }
 
 .grid-text
 {
-    padding: 1%;
-    margin-bottom: 3%;
-    margin-top: 2%;
+    height: fit-content;
+    padding: 5%;
+
+    position: relative;
 
     font-size: 22px;    
     word-wrap: break-word;
@@ -282,7 +287,7 @@ html
 :root {
     --clear: rgba(255, 255, 255, 0.05);
     --shine1: rgba(255, 255, 255, 0.1);
-    --shine2: rgba(255, 255, 255, 0.5);
+    --shine2: rgba(255, 255, 255, 0.25);
 }
 
 .shine-overlay 
