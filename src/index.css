@@ -12,7 +12,7 @@ body, html
 
 html
 {
-    background-color: black;;
+    background-color: #00010B;
 }
 
 .box
@@ -26,6 +26,7 @@ html
     display: flex;
     flex-direction: column;
 
+    border-radius: 5px;
     border: 1px solid rgba(100, 100, 100, 0.5);
 }
 
@@ -36,25 +37,19 @@ html
     height: 100vh;
 }
 
-.container-background
+.logo
 {
-    position: absolute;
-    width: 100%;
-    height: fit-content;
+    height: 40px;
+    width: 148px;
 
+    position: absolute;
+    margin: 1vmin;
+    z-index: 1;
+
+    background-image: url('/src/images/signature.png');
     background-position: center;
     background-size: cover; 
-
-    z-index: -3;
-}
-
-.background-overlay
-{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-
-    background-color: rgba(0, 0, 0, .75);
+    image-rendering: pixelated;
 }
 
 .background
@@ -66,8 +61,17 @@ html
     background-position: center;
     background-size: cover; 
     image-rendering: crisp-edges;
-    filter: blur(8px);
+    filter: blur(2px);
     z-index: -2;
+}
+
+.background-overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, .92);
 }
 
 .portrait
@@ -90,18 +94,17 @@ html
     image-rendering: optimizeQuality;
 
     border-radius: 50%;
-    border: 3px solid rgba(149, 117, 205, 0);
+    border: 3px solid transparent;
 
     transition: all 0.3s ease;
 }
 
 .portrait-image:hover
 {
-    transform: scale(1.05);
-    border-color: #9575CD;
+    transform: scale(1.02);
+    border-color: #6e5494;
 }
 
-/* styling for buttons */
 .buttons
 {
     position: relative;
@@ -126,8 +129,8 @@ html
     align-items: center;
     
     border-radius: 50vmin;
-    background-color: rgba(0, 0, 0, 0.5);
-
+    background-color: transparent;
+    border: 1px solid rgba(100, 100, 100, 0.5);
 
     transition: all 0.18s ease;
 }
@@ -135,7 +138,7 @@ html
 .button-container:hover
 {
     transform: scale(1.05);
-    background-color: #9575CD;
+    background-color: #6e5494;
 }
 
 .button-container:active
@@ -175,7 +178,6 @@ html
     color: transparent;
 }
 
-/* styling for content */
 .content-container
 {
     position: absolute;
@@ -185,11 +187,12 @@ html
 
     display: flex;
     flex-direction: column;
+    gap: 5vmin;
 
+    padding-top: 5vmin;
     justify-content: center;
     align-items: center;
     
-    background-color: rgba(0, 0, 0, 0.7);
     border-top: 1px solid rgba(100, 100, 100, 0.5);
 }
 
@@ -232,7 +235,7 @@ html
 
     background-color: transparent;
     border-radius: 8px;
-    border: 1px solid #9575CD;
+    border: 1px solid #6e5494;
     color: white;
     
     transition: all 0.3s ease;
@@ -242,7 +245,7 @@ html
 {
     cursor: pointer;
     transform: scale(1.025);
-    background-color: #9575CD;
+    background-color: #6e5494;
     color: black;
 }
 
@@ -296,16 +299,4 @@ html
     width: 100%;
     height: 100%;
     background: linear-gradient(40deg, var(--clear) 65%, var(--shine1) 75%, var(--shine2) 85%, var(--shine1) 95% );
-}
-
-.about-container
-{
-    position: relative;
-    width: 100%;
-    height: fit-content;
-    padding-bottom: 2%;
-    margin-bottom: 2%;
-
-    justify-content: center;
-    align-items: center;
 }

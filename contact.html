@@ -20,12 +20,22 @@
     <body>
         <div class="box">
 
-            <div class="nav">   
-                <button class="nav-button" title="Projects" onclick="location.href='index.html#projects-container'">PROJECTS</button> 
-                <button class="nav-button" title="About" onclick="location.href='index.html#about-container';">ABOUT</button> 
-                <button class="nav-button" title="Home" onclick="location.href='index.html';">HOME</button>
-                <button class="nav-button" title="Contact" onclick="location.href='contact.html';">CONTACT</button>      
+            <div class="off-screen-menu">
+                <a href="index.html">home</a>
+                <a href="index.html#about-container">about</a>
+                <a href="index.html#projects-container">projects</a>
+                <a href="contact.html">contact</a>
             </div>
+
+            <div class="logo" onclick="window.location.href='index.html';"></div>
+
+            <nav>
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
             
             <div class="container">
 
@@ -40,9 +50,9 @@
 
                     <div class="contact">
                         <div class="copy" title="Copy Me!"> 
-                            <span class="copy-text">IsaiahDak16@gmail.com</span>
+                            <span class="copy-text">isaiah.dakin@gmail.com</span>
                             <img src="src/images/icon-copy.png" class="copy-img">
-                            <button class="copy-button" onclick="copyText('IsaiahDak16@gmail.com')"></button>
+                            <button class="copy-button" onclick="copyText('isaiah.dakin@gmail.com')"></button>
                         </div>
     
                         <div class="copy" title="Copy Me!"> 
@@ -80,11 +90,12 @@
                         </div>
                     </div>
                     
-                    <p class="last-updated">LAST UPDATED: 09/16/25</p>
+                    <p class="last-updated">LAST UPDATED: 09/19/25</p>
 
                 </div>
             </div>
         </div>
+        <script src="src/scripts/ham-menu.js"></script>
     </body>
 
 </html>

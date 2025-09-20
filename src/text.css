@@ -7,7 +7,7 @@ a
 {
     text-decoration: none;
     font-weight: 900;
-    color: #9575CD;
+    color: #6e5494;
     font-size: 4.5vmin;
 }
 
@@ -24,13 +24,12 @@ a:hover
 
 a:active
 {
-    color: #9575CD;
+    color: #6e5494;
 }
 
 .intro-paragraph, .grid-text
 {
     width: 90%;
-    margin-top: 15vmin;
     position: relative;
 
     color: white;
@@ -52,7 +51,7 @@ a:active
 .nav-button 
 {
     font-size: 3vmin;
-    color: #9575CD;
+    color: #6e5494;
     font-weight: 900;
 }
 
@@ -60,14 +59,14 @@ a:active
 {
     font-size: 10vmin;
     font-weight: 900;
-    color: #9575CD;
+    color: #6e5494;
 }
 
 .header2
 {
     font-size: 4vmin;
     font-weight: 900;
-    color: #9575CD;
+    color: #6e5494;
 }
 
 .header3
