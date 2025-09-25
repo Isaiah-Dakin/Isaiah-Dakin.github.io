@@ -1,33 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// Style
+import './style/app.css'
+import './style/nav.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// components
+import Welcome from './components/Welcome'
 
+function App() 
+{
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div class="box">
+        <div class="off-screen-menu">
+            <a href="index.html">home</a>
+            <a href="index.html#about-container">about</a>
+            <a href="index.html#projects-container">projects</a>
+            <a href="contact.html">contact</a>
+        </div>
+
+        <div class="logo" onClick={() => window.location.href='https://isaiahdakin.ca/'} />
+
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="page-1">
+          <div class="background-overlay"> 
+            <div class="background"/> 
+          </div>
+
+          <Welcome />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
