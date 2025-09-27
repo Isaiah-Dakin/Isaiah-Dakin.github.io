@@ -8,7 +8,19 @@ function Welcome()
     <>
         <div class='welcome'>
             <div class="portrait">
-                <img src={me} alt="A picture of me." class="portrait-img"/>
+                <div class="portrait-card">
+                    <div class="portrait-card-inner">
+                        
+                        <div class="portrait-front">
+                            <img src={me} alt="A picture of me." class="portrait-img"/>
+                        </div>
+
+                        <div class="portrait-back">
+                            <h2> contact: <br/> isaiah.dakin@gmail.com </h2>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
             <ButtonDeck />

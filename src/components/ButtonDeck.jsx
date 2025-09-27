@@ -6,6 +6,8 @@ import instagram from '../assets/icon-instagram.webp'
 import linkedin from '../assets/icon-linkedin.png'
 import github from '../assets/icon-github.png'
 
+import FadeInSection from './FadeInSection'
+
 function ButtonDeck() 
 {
     return (

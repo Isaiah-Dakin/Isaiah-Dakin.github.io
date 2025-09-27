@@ -46,9 +46,11 @@
 {
     position: absolute;
     height: 40px;
-    width: 148px;
+    width: 147px;
 
-    margin: 1.5vmin;
+    margin: 1%;
+
+    top: 0;
 
     background-image: url('../assets/signature.png');
     background-position: center;

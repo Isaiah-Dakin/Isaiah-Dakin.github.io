@@ -1,10 +1,12 @@
 ﻿nav
 {
-    padding: 1rem;
     display: flex;
-    background-color: transparent;
     position: sticky;
     top: 0;
+    margin: 1%;
+    
+    background-color: transparent;
+    
     z-index: 1;
 }
 
@@ -12,22 +14,29 @@
 {
     height: 40px;
     width: 40px;
+
     margin-left: auto;
     position: relative;
+
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+    transition: .3s ease;
+
     z-index: 3;
 }
 
 .ham-menu span
 {
+    position: absolute;
     height: 5px;
     width: 80%;
-    border-radius: 25px;
-    position: absolute;
+
     top: 50%;
     left: 50%;
- 
-    background-color: #212121;
-    border: 1px solid rgba(100, 100, 100, 1);
+
+    border-radius: 25px;
+    background-color: #6e5494;
 
     transform: translate(-50%, -50%);
     transition: .3s ease;
@@ -35,12 +44,19 @@
 
 .ham-menu span:nth-child(1)
 {
+    width: 70%;
     top: 25%;
 }
 
 .ham-menu span:nth-child(3)
 {
+    width: 70%;
     top: 75%;
+}
+
+.ham-menu.active
+{
+    border: 1px solid rgba(100, 100, 100, 0.5)
 }
 
 .ham-menu.active span:nth-child(1)
@@ -67,21 +83,24 @@
     height: 100vh;
     width: 100%;
     max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     position: fixed;
     top: 0;
     right: -400px;
-    z-index: 1;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    align-items: center;
+    padding-top: 4%;
     
-    font-size: 3rem;
+    font-size: 2.5em;
     border: 1px solid rgba(100, 100, 100, 0.5);
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: #212121;
 
-    transition: .3s ease;
+    z-index: 1;
+
+    transition: 225ms ease;
 }
 
 .off-screen-menu.active
@@ -91,15 +110,28 @@
 
 .off-screen-menu a
 {
-    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
-    padding: 3.5%;
-    padding-right: 5%;
-    text-align: right;
     width: 100%;
+
+    padding: 2%;
+    padding-right: 8%;
+
+    text-align: right;
+
     background-color: transparent;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+
+    transition: transform 50ms ease;
+}
+
+.off-screen-menu a:nth-child(1)
+{
+    border-top: 1px solid rgba(100, 100, 100, 0.5);
 }
 
 .off-screen-menu a:hover
 {
-    background-color: #6e5494;
+    transform: translateX(-10px);
+    background-color: #212121;
+    border: 1px solid white;
+    border-right: none;
 }

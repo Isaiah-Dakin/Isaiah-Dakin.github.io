@@ -1,34 +1,96 @@
 .welcome
 {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    gap: 2vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmin;
 
-    justify-content: center;
+  justify-content: center;
 }
 
 .portrait
 {
-    width: 100%;
-    height: fit-content;
-    position: relative;
+  width: 100%;
+  height: fit-content;
+  position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait-card
+{
+  width: 30em;
+  height: 30em;
+
+  background-color: transparent;
+  border: 1px solid rgba(100, 100, 100, 0.9);
+  border-radius: 50%; 
+
+  perspective: 1000px;
+}
+
+.portrait-card-inner
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.portrait-card:hover .portrait-card-inner {
+  transform: rotateY(180deg);
+}
+
+.portrait-front, .portrait-back
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 50%; 
 }
 
 .portrait-img
 {
-    width: 50vmin;
-    height: 50vmin;
+    width: 100%;
+    height: 100%;
 
     object-fit: cover;
     image-rendering: optimizeQuality;
 
     border-radius: 50%; 
-    border: 1px solid rgba(100, 100, 100, 0.9);
+}
+
+.portrait-back
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: #212121;
+  transform: rotateY(180deg);
+}
+
+/* mobile device */
+@media (max-width: 800px) {
+  .portrait-card
+  {
+    width: 16em;
+    height: 16em;
+  }
+
+  .b-d-button
+  {
+    width: 3em;
+    height: 3em;
+  }
 }

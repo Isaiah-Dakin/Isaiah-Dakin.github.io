@@ -15,8 +15,8 @@
 .b-d-button
 {
     position: relative;
-    width: 7vmin;
-    height: 7vmin;
+    width: 4em;
+    height: 4em;
 
     transition: all .18s ease;
 }

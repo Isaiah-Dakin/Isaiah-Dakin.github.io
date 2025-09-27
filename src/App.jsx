@@ -11,16 +11,16 @@ function App()
     <>
       <div class="box">
         <div class="off-screen-menu">
-            <a href="index.html">home</a>
-            <a href="index.html#about-container">about</a>
-            <a href="index.html#projects-container">projects</a>
-            <a href="contact.html">contact</a>
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">projects</a>
+            <a href="mailto:isaiah.dakin@gmail.com">contact</a>
         </div>
 
-        <div class="logo" onClick={() => window.location.href='https://isaiahdakin.ca/'} />
+        <div class="logo" onClick={() => window.location.href=''} title='isaiahdakin.ca' alt="My signature."/>
 
         <nav>
-            <div class="ham-menu">
+            <div class="ham-menu" onClick={() => (document.querySelector('.off-screen-menu').classList.toggle('active'), document.querySelector('.ham-menu').classList.toggle('active'))}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -31,7 +31,7 @@ function App()
           <div class="background-overlay"> 
             <div class="background"/> 
           </div>
-
+          
           <Welcome />
         </div>
       </div>
