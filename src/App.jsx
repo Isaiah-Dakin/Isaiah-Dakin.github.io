@@ -4,6 +4,7 @@ import './style/nav.css'
 
 // components
 import Welcome from './components/Welcome'
+import ProjectDeck from './components/ProjectDeck'
 
 function App() 
 {
@@ -11,10 +12,10 @@ function App()
     <>
       <div class="box">
         <div class="off-screen-menu">
-            <a href="">home</a>
-            <a href="">about</a>
-            <a href="">projects</a>
-            <a href="mailto:isaiah.dakin@gmail.com">contact</a>
+            <a href="">Home.</a>
+            <a href="">About.</a>
+            <a href="">Projects.</a>
+            <a href="mailto:isaiah.dakin@gmail.com">Contact.</a>
         </div>
 
         <div class="logo" onClick={() => window.location.href=''} title='isaiahdakin.ca' alt="My signature."/>
@@ -27,13 +28,17 @@ function App()
             </div>
         </nav>
 
-        <div class="page-1">
-          <div class="background-overlay"> 
-            <div class="background"/> 
-          </div>
-          
+        <div class="background-overlay"> 
+          <div class="background"/> 
+        </div>
+
+        <div class="sub-box-1">
           <Welcome />
         </div>
+        <div class="sub-box-2">
+          <ProjectDeck />
+        </div>
+
       </div>
     </>
   )

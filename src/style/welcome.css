@@ -1,13 +1,15 @@
 .welcome
 {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   gap: 3vmin;
 
   justify-content: center;
+  align-items: center;
 }
 
 .portrait
@@ -92,5 +94,10 @@
   {
     width: 3em;
     height: 3em;
+  }
+
+  .off-screen-menu
+  {
+    padding-top: 13%;
   }
 }

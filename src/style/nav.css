@@ -1,13 +1,15 @@
 ﻿nav
 {
+    position: fixed;
+    width: 100%;
+
     display: flex;
-    position: sticky;
     top: 0;
-    margin: 1%;
+    padding: 1%;
     
     background-color: transparent;
     
-    z-index: 1;
+    z-index: 100;
 }
 
 .ham-menu
@@ -22,8 +24,6 @@
     border: 1px solid transparent;
 
     transition: .3s ease;
-
-    z-index: 3;
 }
 
 .ham-menu span
@@ -98,7 +98,7 @@
     border: 1px solid rgba(100, 100, 100, 0.5);
     background-color: #212121;
 
-    z-index: 1;
+    z-index: 100;
 
     transition: 225ms ease;
 }
@@ -117,7 +117,7 @@
 
     text-align: right;
 
-    background-color: transparent;
+    background-color: #212121;
     border-bottom: 1px solid rgba(100, 100, 100, 0.5);
 
     transition: transform 50ms ease;
@@ -131,7 +131,7 @@
 .off-screen-menu a:hover
 {
     transform: translateX(-10px);
-    background-color: #212121;
     border: 1px solid white;
     border-right: none;
+    font-weight: 800;
 }

@@ -6,13 +6,11 @@ import instagram from '../assets/icon-instagram.webp'
 import linkedin from '../assets/icon-linkedin.png'
 import github from '../assets/icon-github.png'
 
-import FadeInSection from './FadeInSection'
-
 function ButtonDeck() 
 {
     return (
     <>
-        <div class='deck'>
+        <div class='b-deck'>
             <div class="b-d-button" title="GitHub/Isaiah-Dakin" alt="Logo owned by GitHub.">
                 <img src={github}/>
                 <button onClick={() => window.location.href='https://github.com/Isaiah-Dakin'} />
