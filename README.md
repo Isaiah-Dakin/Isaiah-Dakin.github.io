@@ -1,2 +1,2 @@
 # A personal site for fun :)
-isaiahdakin.ca
+Built using HTLM, CSS, React.js, & Vite.
