@@ -14,7 +14,7 @@ function ProjectDeck()
     return (
     <>
         <div class='p-deck'>
-            <div class="p-d-button" onClick={() => window.location.href='https://ultradungeon.ca/about.html'}>
+            <div class="p-d-button" title="https://ultradungeon.ca/about.html" onClick={() => window.location.href='https://ultradungeon.ca/about.html'}>
                 <img class="bg" src={udbg}/>
                 <div class="lg-holder">
                     <img class="lg" src={udlg}/>
@@ -24,7 +24,7 @@ function ProjectDeck()
                 </p>
             </div>
 
-            <div class="p-d-button" onClick={() => window.location.href=''}>
+            <div class="p-d-button" title="https://isaiahdakin.ca" onClick={() => window.location.href=''}>
                 <img class="bg" src={idbg}/>
                 <div class="lg-holder">
                     <img class="lg" src={idlg}/>
@@ -34,7 +34,7 @@ function ProjectDeck()
                 </p>
             </div>
 
-            <div class="p-d-button" onClick={() => window.location.href='https://ultradungeon.ca'}>
+            <div class="p-d-button" title="https://ultradungeon.ca" onClick={() => window.location.href='https://ultradungeon.ca'}>
                 <img class="bg" src={udwbg}/>
                 <div class="lg-holder">
                     <img class="lg" src={udwlg}/>
