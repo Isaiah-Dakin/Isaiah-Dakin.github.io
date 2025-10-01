@@ -14,16 +14,24 @@
 
 .ham-menu
 {
+    position: relative;
     height: 40px;
     width: 40px;
 
+    padding: 2px;
     margin-left: auto;
-    position: relative;
+    margin-top: 0.5%;
+    margin-right: 1%;
 
     border-radius: 5px;
-    border: 1px solid transparent;
+    border: 1px solid rgba(100, 100, 100, 0.5);
 
     transition: .3s ease;
+}
+
+.ham-menu:hover
+{
+    border: 1px solid white;
 }
 
 .ham-menu span
@@ -52,11 +60,6 @@
 {
     width: 70%;
     top: 75%;
-}
-
-.ham-menu.active
-{
-    border: 1px solid rgba(100, 100, 100, 0.5)
 }
 
 .ham-menu.active span:nth-child(1)

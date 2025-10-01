@@ -10,6 +10,7 @@ import FadeInOnScroll from './components/FadeInOnScroll'
 
 // assets
 import signature from "./assets/signature.png"
+import bg from "./assets/bg.gif"
 
 function App() 
 {
@@ -35,22 +36,23 @@ function App()
             </div>
         </nav>
 
-        <div class="background-overlay"> 
-          <div class="background"/> 
-        </div>
+        <div class="background">
+          <img src={bg} alt='A rainy city skyline.'/>
+        </div> 
 
         <div class="sub-box-1">
           <FadeInOnScroll>
             <Welcome />
           </FadeInOnScroll>
         </div>
+
         <div class="sub-box-2">
           <FadeInOnScroll>
             <h1>My Projects.</h1>
             <ProjectDeck />
           </FadeInOnScroll>
         </div>
-
+        
       </div>
     </>
   )
