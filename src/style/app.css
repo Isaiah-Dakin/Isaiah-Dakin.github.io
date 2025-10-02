@@ -38,7 +38,7 @@
     background: none;
 }
 
-.sub-box-2
+.sub-box-2, .sub-box-3
 {
   position: relative;
   width: 100%;
@@ -47,10 +47,12 @@
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
+  gap: 6vmin;
 
   justify-content: center;
   align-items: center;
 
+  padding-bottom: 6vmin;
   background: none;
 }
 
@@ -137,4 +139,12 @@
 {
     0% { --gradient-angle: 0deg }
     100% { --gradient-angle: 360deg }
+}
+
+/* mobile device */
+@media (max-width: 850px) {
+    .sub-box-2, .sub-box-3
+    {
+        gap: 10vmin;
+    }
 }

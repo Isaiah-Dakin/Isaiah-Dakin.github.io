@@ -1,0 +1,92 @@
+:root
+{
+    --clr-1: #350e64;
+    --clr-2: #311b92;
+    --clr-3: #6e5494;
+    --clr-4: #91a7ff;
+    --clr-5: white;
+}
+
+@property --gradient-angle
+{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.about-card
+{
+    position: relative;
+    height: fit-content;
+    width: 91.5%;
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+
+    padding-top: 1.5vmin;
+    padding-bottom: 1.5vmin;
+
+    background-color: #212121;
+    border-radius: 5px;
+    border: 1px solid rgba(100, 100, 100, 0.9);
+}
+
+.about-card p
+{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.about-card .skill-p
+{
+    width: 25%;
+}
+
+.about-card::before,
+.about-card::after
+{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: -0.5rem;
+    background: conic-gradient(
+        from var(--gradient-angle),
+        var(--clr-2),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-3),
+        var(--clr-2));
+    border-radius: inherit;
+    animation: rotation 15s linear infinite;
+}
+
+.about-card::after
+{
+  filter: blur(2rem);
+}
+
+@keyframes rotation
+{
+    0% { --gradient-angle: 0deg }
+    100% { --gradient-angle: 360deg }
+}
+
+/* mobile device */
+@media (max-width: 850px) {
+    .about-card
+    {
+        width: 86%;
+    }
+
+    .about-card p
+    {
+        width: 100%;
+    }
+
+    .about-card .skill-p
+    {
+        width: 50%;
+    }
+}

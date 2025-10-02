@@ -1,12 +1,12 @@
 // Style
 import './style/app.css'
 import './style/nav.css'
-import './style/fade-in-element.css'
 
 // components
 import Welcome from './components/Welcome'
 import ProjectDeck from './components/ProjectDeck'
 import FadeInOnScroll from './components/FadeInOnScroll'
+import About from './components/About'
 
 // assets
 import signature from "./assets/signature.png"
@@ -45,14 +45,21 @@ function App()
             <Welcome />
           </FadeInOnScroll>
         </div>
-
+        
+        <FadeInOnScroll>
         <div class="sub-box-2">
-          <FadeInOnScroll>
             <h1>My Projects.</h1>
             <ProjectDeck />
-          </FadeInOnScroll>
         </div>
-        
+        </FadeInOnScroll>
+
+        <FadeInOnScroll>
+        <div class="sub-box-3">
+            <h1>Skills & Experience.</h1>
+            <About />
+        </div>
+        </FadeInOnScroll>
+
       </div>
     </>
   )

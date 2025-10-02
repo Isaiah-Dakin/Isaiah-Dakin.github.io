@@ -25,7 +25,9 @@
     flex-direction: row;
     flex-flow: wrap;
 
-    padding: 5vmin;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    padding-top: 5vmin;
     gap: 6vmin;
 
     justify-content: center;
@@ -43,7 +45,7 @@
 
     border-radius: 5px;
     background: none;
-    border: 1px solid rgba(100, 100, 100, 0.9);
+    border: none;
 
     transition: transform .2s ease;
 }
@@ -56,19 +58,52 @@
 .p-d-button::before,
 .p-d-button::after
 {
+    position: absolute;
+
     content: "";
     z-index: -1;
-    position: absolute;
     inset: -0.5rem;
-    background: conic-gradient(
-        from var(--gradient-angle),
-        var(--clr-2),
-        var(--clr-3),
-        var(--clr-4),
-        var(--clr-3),
-        var(--clr-2));
-    border-radius: inherit;
+
     animation: rotation 15s linear infinite;
+}
+
+.p-deck .p-d-button:nth-child(1)::before,
+.p-deck .p-d-button:nth-child(1)::after
+{
+    background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-3),
+    var(--clr-2));
+    border-radius: inherit;
+}
+
+.p-deck .p-d-button:nth-child(2)::before,
+.p-deck .p-d-button:nth-child(2)::after
+{
+    background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-4),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-4));
+    border-radius: inherit;
+}
+
+.p-deck .p-d-button:nth-child(3)::before,
+.p-deck .p-d-button:nth-child(3)::after
+{
+    background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-4),
+    var(--clr-2),
+    var(--clr-3));
+    border-radius: inherit;
 }
 
 .p-d-button::after
