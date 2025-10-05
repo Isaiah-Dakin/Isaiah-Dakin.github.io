@@ -17,32 +17,32 @@ function App()
 {
   return (
     <>
-      <div class="box">
-        <div class="off-screen-menu">
+      <div className="box">
+        <div className="off-screen-menu">
             <a href="">Home.</a>
             <a href="">About.</a>
             <a href="">Projects.</a>
             <a href="mailto:isaiah.dakin@gmail.com">Contact.</a>
         </div>
 
-        <div class="logo" onClick={() => window.location.href=''} title='isaiahdakin.ca'>
+        <div className="logo" onClick={() => window.location.href=''} title='isaiahdakin.ca'>
           <img src={signature} alt="My signature."/>
         </div>
 
         <nav>
-            <div class="ham-menu" onClick={() => (document.querySelector('.off-screen-menu').classList.toggle('active'), document.querySelector('.ham-menu').classList.toggle('active'))}>
+            <div className="ham-menu" onClick={() => (document.querySelector('.off-screen-menu').classNameList.toggle('active'), document.querySelector('.ham-menu').classNameList.toggle('active'))}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </nav>
 
-        <div class="background">
+        <div className="background">
           <img src={bg} alt='A rainy city skyline.'/>
         </div> 
 
         {/* home page */}
-        <div class="sub-box-1">
+        <div className="sub-box-1">
           <FadeInOnScroll>
             <Welcome />
           </FadeInOnScroll>
@@ -50,7 +50,7 @@ function App()
         
         {/* projects */}
         <FadeInOnScroll>
-        <div class="sub-box-1-1">
+        <div className="sub-box-1-1">
             <h1>My Projects.</h1>
             <ProjectDeck />
         </div>
@@ -58,7 +58,7 @@ function App()
 
         {/* skills */}
         <FadeInOnScroll>
-        <div class="sub-box-1-1">
+        <div className="sub-box-1-1">
             <h1>Skills & Experience.</h1>
             <Collapsible>
               <About>
@@ -73,8 +73,8 @@ function App()
                     &emsp;I have an excellent work ethic and hold pride in my work, both inside & outside of the workplace.
                 </p>
 
-                <p class="skill-p">
-                    <h3>Languages:</h3>
+                <p className="skill-p">
+                    <span>Languages:</span><br/>
                     &#8594; Java <br/>
                     &#8594; Python <br/>
                     &#8594; (Java/Type)Script<br/>
@@ -84,8 +84,8 @@ function App()
                     &#8594; ASM & ML <br/>
                 </p>
 
-                <p class="skill-p">
-                    <h3>Other:</h3>
+                <p className="skill-p">
+                    <span>Other:</span><br/>
                     &#8594; Windows (7/10) <br/>
                     &#8594; Linux (Ubuntu/Mint)<br/>
                     &#8594; Godot <br/>
@@ -101,7 +101,7 @@ function App()
 
         {/* general */}
         <FadeInOnScroll>
-        <div class="sub-box-1-1">
+        <div className="sub-box-1-1">
           <h1>The Boring Stuff.</h1>
           <Collapsible>
             <About>

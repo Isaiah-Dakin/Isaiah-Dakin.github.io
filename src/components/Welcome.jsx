@@ -6,16 +6,16 @@ function Welcome()
 {
     return (
     <>
-        <div class='welcome'>
-            <div class="portrait">
-                <div class="portrait-card">
-                    <div class="portrait-card-inner">
+        <div className='welcome'>
+            <div className="portrait">
+                <div className="portrait-card">
+                    <div className="portrait-card-inner">
                         
-                        <div class="portrait-front">
-                            <img src={me} alt="A picture of me." class="portrait-img"/>
+                        <div className="portrait-front">
+                            <img src={me} alt="A picture of me." className="portrait-img"/>
                         </div>
 
-                        <div class="portrait-back">
+                        <div className="portrait-back">
                             <h2> contact: <br/> isaiah.dakin@gmail.com </h2>
                         </div>
 

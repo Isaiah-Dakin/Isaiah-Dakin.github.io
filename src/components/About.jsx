@@ -4,7 +4,7 @@ function About(props)
 {
     return (
         <>
-            <div class="about-card">
+            <div className="about-card">
                 {props.children}
             </div>
         </>
