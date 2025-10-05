@@ -1,0 +1,73 @@
+.ReactCollapse--collapse {
+    width: 91.5%;
+    transition: height .3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parent button
+{
+    height: fit-content;
+
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: none;
+
+    margin-left: 4%;
+
+    font-family: inherit;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1em;
+
+    color: #6e5494;
+
+    transition: all 0.3s ease;
+}
+
+.parent button:hover
+{
+    border: 1px solid rgba(100, 100, 100, 0.9);
+}
+
+.parent
+{
+  position: relative;
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  gap: 1vmin;
+
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+}
+
+.btn-parent
+{
+    width: 100%;
+    height: fit-content;
+}
+
+@media (max-width: 850px) {
+    .ReactCollapse--collapse
+    {
+        width: 86%;
+    }
+
+    .parent button
+    {
+        padding: 0%;   
+    }
+
+    .btn-parent
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
