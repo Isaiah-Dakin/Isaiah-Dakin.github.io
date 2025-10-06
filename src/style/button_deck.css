@@ -23,10 +23,12 @@
 
     transition: all .18s ease;
 }
+
 .b-d-button:hover
 {
     transform: translateY(-10px); 
 }
+
 .b-d-button button
 {
     position: absolute;
@@ -36,6 +38,7 @@
     border-style: none;
     background: transparent;
 }
+
 .b-d-button img
 {
     position: absolute;

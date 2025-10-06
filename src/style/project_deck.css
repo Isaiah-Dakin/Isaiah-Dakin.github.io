@@ -52,6 +52,7 @@
 
 .p-d-button:hover
 {
+    cursor: pointer;
     transform: translateY(-15px);
 }
 
@@ -160,7 +161,7 @@
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
 
-    background-color: #212121;
+    background-color: #0a0a0a;
 }
 
 /* mobile device */

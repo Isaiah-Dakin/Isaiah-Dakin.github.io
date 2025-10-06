@@ -5,29 +5,21 @@
     margin-right: auto;
 }
 
-.parent button
+.parent .btn
 {
-    height: fit-content;
-
-    border-radius: 5px;
-    border: 1px solid transparent;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  
+    border-left: 35px solid #91a7ff;
     background: none;
-
-    margin-left: 4%;
-
-    font-family: inherit;
-    font-size: 3em;
-    text-align: center;
-    line-height: 1em;
-
-    color: #6e5494;
-
-    transition: all 0.3s ease;
 }
 
-.parent button:hover
+.parent .btn:hover
 {
-    border: 1px solid rgba(100, 100, 100, 0.9);
+    cursor: pointer;
+    border-left: 35px solid whitesmoke
 }
 
 .parent
@@ -51,6 +43,9 @@
 {
     width: 100%;
     height: fit-content;
+
+    padding-bottom: 5px;
+    padding-left: 4%;
 }
 
 @media (max-width: 850px) {
@@ -59,15 +54,12 @@
         width: 86%;
     }
 
-    .parent button
-    {
-        padding: 0%;   
-    }
-
     .btn-parent
     {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        padding-left: 0%; 
     }
 }

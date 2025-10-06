@@ -20,8 +20,8 @@ function App()
       <div className="box">
         <div className="off-screen-menu">
             <a href="">Home.</a>
-            <a href="">About.</a>
-            <a href="">Projects.</a>
+            <a href="#about">About.</a>
+            <a href="#projects">Projects.</a>
             <a href="mailto:isaiah.dakin@gmail.com">Contact.</a>
         </div>
 
@@ -30,7 +30,7 @@ function App()
         </div>
 
         <nav>
-            <div className="ham-menu" onClick={() => (document.querySelector('.off-screen-menu').classNameList.toggle('active'), document.querySelector('.ham-menu').classNameList.toggle('active'))}>
+            <div className="ham-menu" onClick={() => (document.querySelector('.off-screen-menu').classList.toggle('active'), document.querySelector('.ham-menu').classList.toggle('active'))}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -50,7 +50,7 @@ function App()
         
         {/* projects */}
         <FadeInOnScroll>
-        <div className="sub-box-1-1">
+        <div className="sub-box-1-1" id='projects'>
             <h1>My Projects.</h1>
             <ProjectDeck />
         </div>
@@ -58,13 +58,13 @@ function App()
 
         {/* skills */}
         <FadeInOnScroll>
-        <div className="sub-box-1-1">
+        <div className="sub-box-1-1" id='about'>
             <h1>Skills & Experience.</h1>
             <Collapsible>
               <About>
                 <p>
                     As a student, I can't offer a hefty list of prior professional experience. However, through my
-                    education and personal projects, I have gained a sizeable amount of skills and experiences in the
+                    education and personal projects, I have gained a sizeable quantity of skills and experiences in the
                     field of software development.
                     <br/>
                     &emsp;In addition to technical experience, I have over 7 years of experience working with customers in
