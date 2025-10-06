@@ -9,17 +9,17 @@
 {
     width: 0; 
     height: 0; 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
   
-    border-left: 35px solid #91a7ff;
+    border-left: 25px solid #91a7ff;
     background: none;
 }
 
 .parent .btn:hover
 {
     cursor: pointer;
-    border-left: 35px solid whitesmoke
+    border-left: 25px solid whitesmoke
 }
 
 .parent

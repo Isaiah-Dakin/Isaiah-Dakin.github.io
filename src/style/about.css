@@ -38,6 +38,12 @@
     width: 50%;
 }
 
+.about-card .full-p
+{
+    width: 100%;
+    height: 100%;
+}
+
 .about-card .skill-p
 {
     width: 25%;
