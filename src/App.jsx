@@ -3,6 +3,7 @@ import './style/app.css'
 import './style/nav.css'
 
 // components
+import React from 'react'
 import Welcome from './components/Welcome'
 import ProjectDeck from './components/ProjectDeck'
 import FadeInOnScroll from './components/FadeInOnScroll'
@@ -101,35 +102,35 @@ function App()
 
         {/* general */}
         <FadeInOnScroll>
-        <div className="sub-box-1-1">
-          <h1>A Brief Introduction.</h1>
-          <Collapsible>
-            <About>
-              <p className='full-p'>
-                Hi I'm Isaiah, 
-                <br/><br/>
-                A 23 year old computer science student in my final year of studies at UNB's Fredericton campus.
-                I am passionate about the field of software development & following graduation will be seeking junior level 
-                development, research, and IT positions.
-                <br/>
-                &emsp;I took an interest in software from a young age, attending private programming lessons as well as
-                programming courses in school. Ever since then, my passion for programming has only grown. My primary project 
-                today is the indie title ULTRADUNGEON which I have been co-developing with a fellow BCS BCs graduate & my long-time 
-                friend <a href='https://nathanyoung.ca'>Nathan Young</a> since early 2023. Please navigate to the projects tab 
-                to read more about ULTRADUNGEON!
-                <br/>
-                &emsp;As a computer science student and hobbyist developer, I spend a lot of my time indoors. In addition to creating my own 
-                video game, I consider myself an avid "gamer". However, my personal interests extend beyond electronics! I'm 
-                a big-time nature enjoyer, spending time camping, hiking, & exploring the outdoors. Furthermore, I consider myself a novice 
-                gardener, enthusiastic guitar player, & have a big love for dogs (especially mine).
-                <br/><br/>
-                Thanks for visiting my web page!
-                <br/>
-                Isaiah :)
-              </p>
-            </About>
-          </Collapsible>
-        </div>
+          <div className="sub-box-1-1">
+            <h1>A Brief Introduction.</h1>
+            <Collapsible>
+              <About>
+                <p className='full-p'>
+                  Hi I'm Isaiah, 
+                  <br/><br/>
+                  A 23 year old computer science student in my final year of studies at UNB's Fredericton campus.
+                  I am passionate about the field of software development & following graduation will be seeking junior level 
+                  development, research, and IT positions.
+                  <br/>
+                  &emsp;I took an interest in software from a young age, attending private programming lessons as well as
+                  programming courses in school. Ever since then, my passion for programming has only grown. My primary project 
+                  today is the indie title ULTRADUNGEON which I have been co-developing with a fellow BCS BCs graduate & my long-time 
+                  friend <a href='https://nathanyoung.ca'>Nathan Young</a> since early 2023. Please navigate to the projects tab 
+                  to read more about ULTRADUNGEON!
+                  <br/>
+                  &emsp;As a computer science student and hobbyist developer, I spend a lot of my time indoors. In addition to creating my own 
+                  video game, I consider myself an avid "gamer". However, my personal interests extend beyond electronics! I'm 
+                  a big-time nature enjoyer, spending time camping, hiking, & exploring the outdoors. Furthermore, I consider myself a novice 
+                  gardener, enthusiastic guitar player, & have a big love for dogs (especially mine).
+                  <br/><br/>
+                  Thanks for visiting my web page!
+                  <br/>
+                  Isaiah :)
+                </p>
+              </About>
+            </Collapsible>
+          </div>
         </FadeInOnScroll>
       </div>
     </>
