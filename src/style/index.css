@@ -69,23 +69,18 @@ p
 
 a 
 {
-  font-size: 1em;
   font-weight: 500;
   color: white;
   text-decoration: inherit;
 }
 a:hover 
 {
+  color: #6e5494;
   font-weight: 700;
 }
 
 /* mobile device */
 @media (max-width: 850px) {
-  a
-  {
-    font-size: 0.75em;
-  }
-
   p
   {
     font-size: 1.8em;

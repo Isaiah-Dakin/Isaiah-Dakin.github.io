@@ -69,7 +69,7 @@ function App()
                     field of software development.
                     <br/>
                     &emsp;In addition to technical experience, I have over 7 years of experience working with customers in
-                    'service' type positions at multiple different companies.
+                    service type positions at multiple different companies.
                     <br/>
                     &emsp;I have an excellent work ethic and hold pride in my work, both inside & outside of the workplace.
                 </p>
@@ -110,14 +110,14 @@ function App()
                   Hi I'm Isaiah, 
                   <br/><br/>
                   A 23 year old computer science student in my final year of studies at UNB's Fredericton campus.
-                  I am passionate about the field of software development & following graduation will be seeking junior level 
+                  I'm passionate about the field of software development & following graduation will be seeking junior level 
                   development, research, and IT positions.
                   <br/>
                   &emsp;I took an interest in software from a young age, attending private programming lessons as well as
                   programming courses in school. Ever since then, my passion for programming has only grown. My primary project 
-                  today is the indie title ULTRADUNGEON which I have been co-developing with a fellow BCS BCs graduate & my long-time 
+                  today is the indie title ULTRADUNGEON which I have been co-developing with a fellow BCS graduate & my long-time 
                   friend <a href='https://nathanyoung.ca'>Nathan Young</a> since early 2023. Please navigate to the projects tab 
-                  to read more about ULTRADUNGEON!
+                  to read more about the project.
                   <br/>
                   &emsp;As a computer science student and hobbyist developer, I spend a lot of my time indoors. In addition to creating my own 
                   video game, I consider myself an avid "gamer". However, my personal interests extend beyond electronics! I'm 
