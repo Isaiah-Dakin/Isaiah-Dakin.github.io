@@ -26,8 +26,10 @@ function App()
             <a href="mailto:isaiah.dakin@gmail.com">Contact.</a>
         </div>
 
-        <div className="logo" onClick={() => window.location.href=''} title='isaiahdakin.ca'>
-          <img src={signature} alt="My signature."/>
+        <div className="logo">
+          <div className='logo-img-container' onClick={() => window.location.href=''} title='isaiahdakin.ca'>
+            <img src={signature} alt="My signature."/>
+          </div>
         </div>
 
         <nav>

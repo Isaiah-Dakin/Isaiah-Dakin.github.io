@@ -24,9 +24,6 @@
   flex-flow: column;
 
   background: none;
-  
-  border-radius: 5px;
-  border: 1px solid rgba(100, 100, 100, 0.9);
 }
 
 .sub-box-1
@@ -68,7 +65,7 @@
   width: 100%;
   height: 100%;
 
-  filter: brightness(55%);
+  filter: brightness(35%);
 
   background-position: center;
   object-fit: cover;
@@ -82,45 +79,48 @@
 {
     position: absolute;
     height: fit-content;
-    width: fit-content;
+    width: 100%;
 
     display: flex;
-    justify-content: center;
     align-items: center;
 
-    padding: 2px;
-    margin-top: 1%;
-    margin-left: 1%;
+    top: 0;
+    padding: 1%;
+}
 
-    border-radius: 5px;
+.logo-img-container
+{
+    position: relative;
+    height: 40px;
+    width: 281px;
 
-    /* behind off-screen-menu */
+    display: flex;
+    align-items: center;
+
+    border-radius: 4px;
+
     z-index: 99;
 }
 
 .logo img
 {
-    height: 40px;
-    width: 281px;
+    height: 100%;
+    width: 100%;
 
-    background-position: center;
-    background-size: cover; 
+    object-fit: cover; 
     image-rendering: pixelated;
 
-    border-radius: inherit;
-    border: 1px solid rgba(100, 100, 100, 0.9);
     background-color: #0a0a0a;
-  
-    z-index: inherit;
+    border: 4px solid #0a0a0a;
 }
 
-.logo::before,
-.logo::after
+.logo-img-container::before,
+.logo-img-container::after
 {
     content: "";
-    z-index: 98;
+    z-index: -1;
     position: absolute;
-    inset: -0.01rem;
+    inset: -0.3rem;
     background: conic-gradient(
         from var(--gradient-angle),
         var(--clr-2),
@@ -129,12 +129,12 @@
         var(--clr-3),
         var(--clr-2));
     border-radius: inherit;
-    animation: rotation 15s linear infinite;
+    animation: rotation 8s linear infinite;
 }
 
-.logo::after
+.logo-img-container::after
 {
-  filter: blur(2rem);
+  filter: blur(1rem);
 }
 
 @keyframes rotation
@@ -145,8 +145,14 @@
 
 /* mobile device */
 @media (max-width: 850px) {
-    .sub-box-2, .sub-box-3
+    .sub-box-1
     {
         gap: 10vmin;
+    }
+
+    .logo
+    {
+        padding-top: 1rem;
+        justify-content: center;
     }
 }
