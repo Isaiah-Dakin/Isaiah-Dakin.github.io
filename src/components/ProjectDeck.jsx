@@ -14,7 +14,7 @@ function ProjectDeck()
     return (
     <>
         <div className='p-deck'>
-            <div className="p-d-button" title="https://ultradungeon.ca/about.html" onClick={() => window.location.href='https://ultradungeon.ca/about.html'}>
+            <div className="p-d-button" title="https://ultradungeon.ca" onClick={() => window.location.href='https://ultradungeon.ca'}>
                 <img className="bg" src={udbg}/>
                 <div className="lg-holder">
                     <img className="lg" src={udlg}/>
@@ -30,7 +30,7 @@ function ProjectDeck()
                     <img className="lg" src={idlg}/>
                 </div>
                 <p>
-                    My very own web-page, an SPA created using React.js and Vite. Hosted through GitHub pages.
+                    My personal web-page, an SPA created using React.js and Vite. Hosted through GitHub pages.
                 </p>
             </div>
 
@@ -40,7 +40,7 @@ function ProjectDeck()
                     <img className="lg" src={udwlg}/>
                 </div>
                 <p>
-                    A dive into simple web dev focusing on ULTRADUNGEON. Created with HTML/CSS & GitHub pages.
+                    A React.js SPA built specifically for ULTRADUNGEON. Hosted via GitHub pages.
                 </p>
             </div>
         </div>

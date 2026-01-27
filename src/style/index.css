@@ -1,17 +1,12 @@
 :root 
 {
-  font-family: "Jersey 10", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: "Jersey 10", system-ui, sans-serif;
+  font-optical-sizing: auto;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.85);
 
-  background-color: #0a0a0a;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: black
 }
 
 *
@@ -33,6 +28,14 @@ img
 body, html
 {
   height: 100%;
+
+  word-break: normal;
+  text-align: justify;
+  letter-spacing: 0.01em;
+
+  text-rendering: optimizeLegibility;
+
+  font-weight: 800;
 }
 
 h1 
@@ -52,15 +55,11 @@ h3, span
   color: #6e5494;
 
   font-size: 1.4em;
-  text-align: left;
 }
 
 p
 {
   width: 100%;
-
-  word-break: break-all;
-  text-align: left;
   font-size: 2.5em;
 
   padding-left: 2%;
@@ -69,14 +68,23 @@ p
 
 a 
 {
-  font-weight: 500;
-  color: white;
   text-decoration: inherit;
+
+  background-image: linear-gradient(#91a7ff, #311b92);
+  color: transparent;
+  background-clip: text;
+
+  transition: all 0.18s ease;
 }
 a:hover 
 {
-  color: #6e5494;
-  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover
+{
+  cursor: pointer;
 }
 
 /* mobile device */
