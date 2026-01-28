@@ -10,7 +10,7 @@ const FadeInOnScroll = ({ children }) => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is visible
+      { threshold: 0.25 } // Trigger when 35% of the element is visible
     );
 
     if (elementRef.current) {

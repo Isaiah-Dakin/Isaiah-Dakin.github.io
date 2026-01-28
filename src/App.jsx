@@ -13,6 +13,7 @@ import Collapsible from './components/Collapsible'
 // assets
 import signature from "./assets/signature.png"
 import bg from "./assets/bg.gif"
+import resume from "./assets/Isaiah-JC-D-Resume(redacted).pdf"
 
 function App() 
 {
@@ -26,29 +27,32 @@ function App()
       </div>
         <div className='nav-button-container'>
           <div className='nav-button'>
-            <a href='#about'>About.</a>
+            <a href='#about' title='About me.'>About</a>
           </div>
           <div className='nav-button'>
-            <a href='#projects'>Projects.</a>
+            <a href='#projects' title='My projects.'>Projects</a>
           </div>
           <div className='nav-button'>
-            <a href='mailto:isaiah.dakin@gmail.com'>Contact.</a>
+            <a href={resume} title='My resume (redacted version).'>Resume</a>
+          </div>
+          <div className='nav-button'>
+            <a href='mailto:isaiah.dakin@gmail.com' title='Contact me.'>Contact</a>
           </div>
         </div>
       </nav>
 
       <div className="box">
+        {/* home page */}
+        <FadeInOnScroll>
         <div className="background">
           <img src={bg} alt='A rainy city skyline.'/>
         </div> 
 
-        {/* home page */}
         <div className="sub-box-1">
-          <FadeInOnScroll>
-            <Welcome />
-          </FadeInOnScroll>
+        <Welcome />
         </div>
-        
+
+        </FadeInOnScroll>
         {/* projects */}
         <FadeInOnScroll>
         <div className="sub-box-1-1" id='projects'>
@@ -68,7 +72,7 @@ function App()
                     university education and personal projects, I have gained a sizeable quantity of skills and experiences in the
                     field of software development.
                     <br/><br/>
-                    Please see the provided list of technial skills and technologies that I have experience with. 
+                    Please see the provided list of my technial skills and technologies that I have experience with. 
                     <br/><br/>
                     In addition to technical experience, I have over 7 years of experience serving customers in
                     service-type positions at multiple companies.
@@ -120,6 +124,9 @@ function App()
                   today is the indie video game ULTRADUNGEON. I have been co-developing ULTRADUNGEON with a fellow BCS graduate & my long-time 
                   friend <a href='https://nathanyoung.ca'>Nathan Young</a> since early 2023, and continue to make frequent additions.
                   Please navigate to the projects tab to read more about ULTRADUNGEON.
+                  <br/><br/>
+                  In addition to ULTRADUNGEON, I have taken part in multiple other personal and academic projects primarily involving web
+                  development and HCI research. Feel free to check out my resume for details regarding these projects.
                   <br/><br/>
                   Thanks for visiting my web page!
                   <br/>

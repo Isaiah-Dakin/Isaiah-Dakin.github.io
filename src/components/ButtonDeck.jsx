@@ -1,8 +1,6 @@
 import '../style/button_deck.css'
 
-import spotify from '../assets/icon-spotify.png'
-import steam from '../assets/icon-steam.png'
-import instagram from '../assets/icon-instagram.webp'
+import instagram from '../assets/icon-ig.png'
 import linkedin from '../assets/icon-linkedin.png'
 import github from '../assets/icon-github.png'
 
@@ -25,16 +23,6 @@ function ButtonDeck()
             <div className="b-d-button" title="@isaiahdakin">
                 <img src={instagram} alt="Logo owned by Instagram."/>
                 <button onClick={() => window.location.href='https://www.instagram.com/isaiahdakin'} />
-            </div>
-
-            <div className="b-d-button" title="@Dr.Zeus">
-                <img src={steam} alt="Logo owned by Valve."/>
-                <button onClick={() => window.location.href='https://steamcommunity.com/id/Doc_Zeus/'} />
-            </div>
-
-            <div className="b-d-button" title="@Sai">
-                <img src={spotify} alt="Logo owned by Spotify."/>
-                <button onClick={() => window.location.href='https://open.spotify.com/user/r74p9kub0d9sqf0x2whfaiamh?si=a17ca90944a4400a'} />
             </div>
         </div>
     </>

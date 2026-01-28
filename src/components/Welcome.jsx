@@ -18,7 +18,6 @@ function Welcome()
                         <div className="portrait-back">
                             <h2> contact: <br/> isaiah.dakin@gmail.com </h2>
                         </div>
-
                     </div>
                 </div>
             </div>
