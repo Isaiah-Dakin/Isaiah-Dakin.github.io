@@ -68,14 +68,11 @@ function App()
             <Collapsible>
               <About>
                 <p>
-                    &emsp; As a university student, I do not offer a hefty list of prior workplace experience. However, through my
-                    university education and personal projects, I have gained a sizeable quantity of skills and experiences in the
-                    field of software development.
+                    &emsp; As a recent graduate, I can not offer a hefty list of prior workplace experiences. However, through my
+                    university education and personal projects, I have gained valuable skills and experiences in the field of software 
+                    development.
                     <br/><br/>
                     Please see the provided list of my technial skills and technologies that I have experience with. 
-                    <br/><br/>
-                    In addition to technical experience, I have over 7 years of experience serving customers in
-                    service-type positions at multiple companies.
                 </p>
 
                 <p className="skill-p">
@@ -113,20 +110,20 @@ function App()
             <Collapsible>
               <About>
                 <p className='full-p'>
-                  Nice to meet you, I'm Isaiah, 
+                  Nice to meet you, I'm Isaiah. 
                   <br/><br/>
-                  &emsp;I am a 23 year old computer science student in the final term of my undergraduate studies at UNB's Fredericton campus.
-                  I am deeply passionate about the field of software development & am currently seeking opportunities to broaden my experience
-                  within the computer science discipline in a professional context.
+                  &emsp;I am a 24 year old programmer and recent computer science alumni. I am deeply passionate about the field of software 
+                  development & am currently seeking opportunities to broaden my experience within the computer science discipline in a 
+                  professional context.
                   <br/><br/>
-                  I took an interest in software from a young age, attending private programming lessons as well as
+                  I took an interest in development at a young age, attending private programming lessons as well as
                   programming courses in middle-school. Since then, my passion for programming has only grown. My primary project 
                   today is the indie video game ULTRADUNGEON. I have been co-developing ULTRADUNGEON with a fellow BCS graduate & my long-time 
                   friend <a href='https://nathanyoung.ca'>Nathan Young</a> since early 2023, and continue to make frequent additions.
                   Please navigate to the projects tab to read more about ULTRADUNGEON.
                   <br/><br/>
                   In addition to ULTRADUNGEON, I have taken part in multiple other personal and academic projects primarily involving web
-                  development and HCI research. Feel free to check out my resume for details regarding these projects.
+                  development, game development, and HCI research. I encourage you to check out my resume for more details regarding these projects.
                   <br/><br/>
                   Thanks for visiting my web page!
                   <br/>
