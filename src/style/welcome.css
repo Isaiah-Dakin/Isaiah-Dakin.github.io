@@ -88,6 +88,13 @@
 
 /* mobile device */
 @media (max-width: 800px) {
+
+  .welcome
+  {
+    justify-content: start;
+    gap: 12vmin;
+  }
+
   .portrait-card
   {
     width: 18em;
@@ -98,10 +105,5 @@
   {
     width: 3em;
     height: 3em;
-  }
-
-  .off-screen-menu
-  {
-    padding-top: 13%;
   }
 }

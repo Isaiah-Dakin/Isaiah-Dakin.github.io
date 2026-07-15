@@ -1,6 +1,6 @@
 ﻿nav
 {
-    position: absolute;
+    position: relative;
     height: fit-content;
     width: 100%;
 
@@ -17,7 +17,7 @@
 
 .nav-button-container
 {
-    height: 100%;
+    height: fit-content;
     width:100%;
 
     display: flex;
@@ -136,5 +136,10 @@
     .nav-button a
     {
         font-size: 1.8em;
+    }
+
+    .logo
+    {
+        padding: 55px;
     }
 }

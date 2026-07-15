@@ -11,36 +11,12 @@ import About from './components/About'
 import Collapsible from './components/Collapsible'
 
 // assets
-import signature from "./assets/signature.png"
 import bg from "./assets/bg.gif"
-import resume from "./assets/Isaiah-JC-D-Resume(redacted).pdf"
 
 function App() 
 {
   return (
     <>
-      <nav>
-      <div className="logo">
-        <div className='logo-img-container' onClick={() => window.location.href=''} title='isaiahdakin.ca'>
-          <img src={signature} alt="My signature."/>
-        </div>
-      </div>
-        <div className='nav-button-container'>
-          <div className='nav-button'>
-            <a href='#about' title='About me.'>About</a>
-          </div>
-          <div className='nav-button'>
-            <a href='#projects' title='My projects.'>Projects</a>
-          </div>
-          <div className='nav-button'>
-            <a href={resume} title='My resume (redacted version).'>Resume</a>
-          </div>
-          <div className='nav-button'>
-            <a href='mailto:isaiah.dakin@gmail.com' title='Contact me.'>Contact</a>
-          </div>
-        </div>
-      </nav>
-
       <div className="box">
         {/* home page */}
         <FadeInOnScroll>
