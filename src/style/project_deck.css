@@ -25,9 +25,6 @@
     flex-direction: row;
     flex-flow: wrap;
 
-    padding-left: 5vmin;
-    padding-right: 5vmin;
-    padding-top: 5vmin;
     gap: 6vmin;
 
     justify-content: center;
@@ -96,6 +93,45 @@
 
 .p-deck .p-d-button:nth-child(3)::before,
 .p-deck .p-d-button:nth-child(3)::after
+{
+    background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-4),
+    var(--clr-2),
+    var(--clr-3));
+    border-radius: inherit;
+}
+
+.p-deck .p-d-button:nth-child(4)::before,
+.p-deck .p-d-button:nth-child(4)::after
+{
+    background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-4),
+    var(--clr-2),
+    var(--clr-3));
+    border-radius: inherit;
+}
+
+.p-deck .p-d-button:nth-child(5)::before,
+.p-deck .p-d-button:nth-child(5)::after
+{
+    background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-4),
+    var(--clr-2),
+    var(--clr-3));
+    border-radius: inherit;
+}
+
+.p-deck .p-d-button:nth-child(6)::before,
+.p-deck .p-d-button:nth-child(6)::after
 {
     background: conic-gradient(
     from var(--gradient-angle),

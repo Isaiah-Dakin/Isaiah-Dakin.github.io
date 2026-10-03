@@ -9,6 +9,8 @@ import idlg from '../assets/signature.png'
 import udwbg from '../assets/udw-background.jpg'
 import udwlg from '../assets/udca.png'
 
+// import ebg from '../assets/empty-bg.png'
+
 function ProjectDeck() 
 {
     return (
@@ -43,6 +45,21 @@ function ProjectDeck()
                     A React.js SPA built specifically for ULTRADUNGEON. Hosted via GitHub pages.
                 </p>
             </div>
+
+            {/* <div className="p-d-button" title="https://isaiahdakin.ca" onClick={() => window.location.href=''}>
+                <img className="bg" src={ebg}/>
+                <div className="lg-holder"/>
+            </div>
+
+            <div className="p-d-button" title="https://isaiahdakin.ca" onClick={() => window.location.href=''}>
+                <img className="bg" src={ebg}/>
+                <div className="lg-holder"/>
+            </div>
+
+            <div className="p-d-button" title="https://isaiahdakin.ca" onClick={() => window.location.href=''}>
+                <img className="bg" src={ebg}/>
+                <div className="lg-holder"/>
+            </div> */}
         </div>
     </>
   )
