@@ -3,13 +3,16 @@ import '../style/welcome.css'
 import me from '../assets/me.jpg' 
 import resume from "../assets/Isaiah-JC-D-Resume(redacted).pdf"
 import signature from "../assets/signature.png"   
+import bg from "../assets/vhs.gif"
 
 function Welcome() 
 {
     return (
     <>
         <div className='welcome'>
-
+            <div className="background">
+                <img src={bg} alt='A rainy city skyline.'/>
+            </div> 
             <nav>
                 <div className="logo">
                     <div className='logo-img-container' onClick={() => window.location.href=''} title='isaiahdakin.ca'>
